@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "repo": "zephyr",
+  "revision": "HEAD",
+  "catalog_file": "state/catalog.json",
+  "cursor_file": "state/cursor.json",
+  "history_file": "data/items.json",
+  "feed_file": "public/feed.xml",
+  "feed_title": "New Zephyr SoC families",
+  "feed_description": "New SoC families added to Zephyr, detected from soc.yml metadata.",
+  "feed_link": "https://example.invalid/feed.xml",
+  "repository_url": "https://github.com/zephyrproject-rtos/zephyr",
+  "max_feed_items": 50,
+  "backfill_days": 365
+}

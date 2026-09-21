@@ -1,0 +1,128 @@
+name: Update Zephyr SoC family feed
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: zephyr-soc-family-feed-update
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: ${{ github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: read
+
+    steps:
+      - name: Check out feed repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install --requirement requirements.txt
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Check out Zephyr main history and sparse SoC files
+        env:
+          ZEPHYR_DIR: ${{ runner.temp }}/zephyr
+        run: |
+          git clone \
+            --filter=blob:none \
+            --no-checkout \
+            --single-branch \
+            --branch main \
+            https://github.com/zephyrproject-rtos/zephyr.git \
+            "$ZEPHYR_DIR"
+          git -C "$ZEPHYR_DIR" sparse-checkout init --cone
+          git -C "$ZEPHYR_DIR" sparse-checkout set soc
+          git -C "$ZEPHYR_DIR" switch main
+          test "$(git -C "$ZEPHYR_DIR" rev-parse --is-shallow-repository)" = false
+
+      - name: Prepare runtime feed URL
+        env:
+          CONFIGURED_BASE_URL: ${{ vars.FEED_BASE_URL }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          config = json.loads(Path("config.json").read_text(encoding="utf-8"))
+          base_url = os.environ.get("CONFIGURED_BASE_URL", "").strip().rstrip("/")
+          if not base_url:
+              owner, repository = os.environ["GITHUB_REPOSITORY"].split("/", 1)
+              pages_host = f"{owner.lower()}.github.io"
+              if repository.lower() == pages_host:
+                  base_url = f"https://{pages_host}"
+              else:
+                  base_url = f"https://{pages_host}/{repository}"
+          config["feed_link"] = f"{base_url}/feed.xml"
+          Path(".runtime-config.json").write_text(
+              json.dumps(config, indent=2) + "\n", encoding="utf-8"
+          )
+          PY
+
+      - name: Scan and generate feed
+        env:
+          ZEPHYR_DIR: ${{ runner.temp }}/zephyr
+        run: |
+          python src/zephyr_soc_feed.py \
+            --config .runtime-config.json \
+            --repo "$ZEPHYR_DIR"
+
+      - name: Confirm expected output
+        run: |
+          test -s public/feed.xml
+          test -s public/index.html
+          test -s state/catalog.json
+          test -s state/cursor.json
+          test -s data/items.json
+
+      - name: Commit changed durable state and history
+        run: |
+          git add -- state/catalog.json state/cursor.json data/items.json
+          if git diff --cached --quiet; then
+            echo "No durable state change to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update Zephyr SoC family feed state" \
+            -m "Co-authored-by: Limor Fried <ladyada@users.noreply.github.com>"
+          git push origin "HEAD:$GITHUB_REF_NAME"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
