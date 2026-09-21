@@ -1,5 +1,2884 @@
 {
   "schema_version": 1,
-  "revision": null,
-  "families": {}
+  "revision": "7abe2f8851c3bdcfef6d3731b7e8be16521f1c97",
+  "families": {
+    "ambiq": {
+      "series": [
+        "apollo2x",
+        "apollo3x",
+        "apollo4x",
+        "apollo5x"
+      ],
+      "socs": [
+        "apollo2",
+        "apollo3_blue",
+        "apollo3p_blue",
+        "apollo4p",
+        "apollo4p_blue",
+        "apollo510"
+      ],
+      "source_files": [
+        "soc/ambiq/soc.yml"
+      ]
+    },
+    "amd_versal": {
+      "series": [],
+      "socs": [
+        "versal_apu",
+        "versal_rpu"
+      ],
+      "source_files": [
+        "soc/xlnx/versal/soc.yml"
+      ]
+    },
+    "amd_versal2": {
+      "series": [],
+      "socs": [
+        "amd_versal2_apu",
+        "amd_versal2_rpu"
+      ],
+      "source_files": [
+        "soc/xlnx/versal2/soc.yml"
+      ]
+    },
+    "amd_versalnet": {
+      "series": [],
+      "socs": [
+        "amd_versalnet_apu",
+        "amd_versalnet_rpu"
+      ],
+      "source_files": [
+        "soc/xlnx/versalnet/soc.yml"
+      ]
+    },
+    "andes_v5": {
+      "series": [
+        "ae350"
+      ],
+      "socs": [
+        "ae350"
+      ],
+      "source_files": [
+        "soc/andestech/soc.yml"
+      ]
+    },
+    "arm": {
+      "series": [
+        "beetle",
+        "designstart",
+        "mps2",
+        "mps3",
+        "mps4",
+        "musca"
+      ],
+      "socs": [
+        "an383",
+        "an385",
+        "an386",
+        "an500",
+        "an521",
+        "an536",
+        "beetle_r0",
+        "corstone300",
+        "corstone310",
+        "corstone315",
+        "corstone320",
+        "designstart_fpga_cortex_m1",
+        "designstart_fpga_cortex_m3",
+        "musca_b1",
+        "musca_s1"
+      ],
+      "source_files": [
+        "soc/arm/soc.yml"
+      ]
+    },
+    "arm64": {
+      "series": [
+        "fvp_aem",
+        "fvp_aemv8r"
+      ],
+      "socs": [
+        "a320",
+        "fvp_aemv8r_aarch32",
+        "fvp_aemv8r_aarch64",
+        "qemu_cortex_a53",
+        "qemu_virt_arm64",
+        "v8a",
+        "v8a_aarch32",
+        "v9a"
+      ],
+      "source_files": [
+        "soc/arm/soc.yml"
+      ]
+    },
+    "aspeed": {
+      "series": [
+        "ast10x0"
+      ],
+      "socs": [
+        "ast1030"
+      ],
+      "source_files": [
+        "soc/aspeed/soc.yml"
+      ]
+    },
+    "atmel_sam": {
+      "series": [
+        "sam3x",
+        "sam4e",
+        "sam4l",
+        "sam4s",
+        "same70",
+        "samv71"
+      ],
+      "socs": [
+        "sam3x4c",
+        "sam3x4e",
+        "sam3x8c",
+        "sam3x8e",
+        "sam3x8h",
+        "sam4e16c",
+        "sam4e16e",
+        "sam4e8c",
+        "sam4e8e",
+        "sam4lc2a",
+        "sam4lc2b",
+        "sam4lc2c",
+        "sam4lc4a",
+        "sam4lc4b",
+        "sam4lc4c",
+        "sam4lc8a",
+        "sam4lc8b",
+        "sam4lc8c",
+        "sam4ls2a",
+        "sam4ls2b",
+        "sam4ls2c",
+        "sam4ls4a",
+        "sam4ls4b",
+        "sam4ls4c",
+        "sam4ls8a",
+        "sam4ls8b",
+        "sam4ls8c",
+        "sam4s16b",
+        "sam4s16c",
+        "sam4s2a",
+        "sam4s2b",
+        "sam4s2c",
+        "sam4s4a",
+        "sam4s4b",
+        "sam4s4c",
+        "sam4s8b",
+        "sam4s8c",
+        "sam4sa16c",
+        "same70j19",
+        "same70j19b",
+        "same70j20",
+        "same70j20b",
+        "same70j21",
+        "same70j21b",
+        "same70n19",
+        "same70n19b",
+        "same70n20",
+        "same70n20b",
+        "same70n21",
+        "same70n21b",
+        "same70q19",
+        "same70q19b",
+        "same70q20",
+        "same70q20b",
+        "same70q21",
+        "same70q21b",
+        "samv71j19",
+        "samv71j19b",
+        "samv71j20",
+        "samv71j20b",
+        "samv71j21",
+        "samv71j21b",
+        "samv71n19",
+        "samv71n19b",
+        "samv71n20",
+        "samv71n20b",
+        "samv71n21",
+        "samv71n21b",
+        "samv71q19",
+        "samv71q19b",
+        "samv71q20",
+        "samv71q20b",
+        "samv71q21",
+        "samv71q21b"
+      ],
+      "source_files": [
+        "soc/atmel/sam/soc.yml"
+      ]
+    },
+    "atmel_sam0": {
+      "series": [
+        "samc20",
+        "samc21",
+        "samd20",
+        "samd21",
+        "samd51",
+        "same51",
+        "same53",
+        "same54",
+        "saml21",
+        "samr21",
+        "samr34",
+        "samr35"
+      ],
+      "socs": [
+        "samc20e15a",
+        "samc20e16a",
+        "samc20e17a",
+        "samc20e18a",
+        "samc20g15a",
+        "samc20g16a",
+        "samc20g17a",
+        "samc20g18a",
+        "samc20j15a",
+        "samc20j16a",
+        "samc20j17a",
+        "samc20j17au",
+        "samc20j18a",
+        "samc20j18au",
+        "samc20n17a",
+        "samc20n18a",
+        "samc21e15a",
+        "samc21e16a",
+        "samc21e17a",
+        "samc21e18a",
+        "samc21g15a",
+        "samc21g16a",
+        "samc21g17a",
+        "samc21g18a",
+        "samc21j15a",
+        "samc21j16a",
+        "samc21j17a",
+        "samc21j17au",
+        "samc21j18a",
+        "samc21j18au",
+        "samc21n17a",
+        "samc21n18a",
+        "samd20e14",
+        "samd20e15",
+        "samd20e16",
+        "samd20e17",
+        "samd20e18",
+        "samd20g14",
+        "samd20g15",
+        "samd20g16",
+        "samd20g17",
+        "samd20g17u",
+        "samd20g18",
+        "samd20g18u",
+        "samd20j14",
+        "samd20j15",
+        "samd20j16",
+        "samd20j17",
+        "samd20j18",
+        "samd21e15a",
+        "samd21e16a",
+        "samd21e17a",
+        "samd21e18a",
+        "samd21g15a",
+        "samd21g16a",
+        "samd21g17a",
+        "samd21g17au",
+        "samd21g18a",
+        "samd21g18au",
+        "samd21j15a",
+        "samd21j16a",
+        "samd21j17a",
+        "samd21j18a",
+        "samd51g18a",
+        "samd51g19a",
+        "samd51j18a",
+        "samd51j19a",
+        "samd51j20a",
+        "samd51n19a",
+        "samd51n20a",
+        "samd51p19a",
+        "samd51p20a",
+        "same51j18a",
+        "same51j19a",
+        "same51j20a",
+        "same51n19a",
+        "same51n20a",
+        "same53j18a",
+        "same53j19a",
+        "same53j20a",
+        "same53n19a",
+        "same53n20a",
+        "same54n19a",
+        "same54n20a",
+        "same54p19a",
+        "same54p20a",
+        "saml21e15b",
+        "saml21e16b",
+        "saml21e17b",
+        "saml21e18b",
+        "saml21g16b",
+        "saml21g17b",
+        "saml21g18b",
+        "saml21j16b",
+        "saml21j17b",
+        "saml21j17bu",
+        "saml21j18b",
+        "saml21j18bu",
+        "samr21e16a",
+        "samr21e17a",
+        "samr21e18a",
+        "samr21e19a",
+        "samr21g16a",
+        "samr21g17a",
+        "samr21g18a",
+        "samr34j16b",
+        "samr34j17b",
+        "samr34j18b",
+        "samr35j16b",
+        "samr35j17b",
+        "samr35j18b"
+      ],
+      "source_files": [
+        "soc/atmel/sam0/soc.yml"
+      ]
+    },
+    "aurix": {
+      "series": [
+        "tc3x",
+        "tc4x"
+      ],
+      "socs": [
+        "qemu_tc3x",
+        "qemu_tc4x"
+      ],
+      "source_files": [
+        "soc/qemu/tricore/soc.yml"
+      ]
+    },
+    "balletto": {
+      "series": [
+        "b1"
+      ],
+      "socs": [
+        "ab1c1f4m51820ph0"
+      ],
+      "source_files": [
+        "soc/alif/balletto/soc.yml"
+      ]
+    },
+    "bcmvk": {
+      "series": [
+        "valkyrie",
+        "viper"
+      ],
+      "socs": [
+        "bcm58400",
+        "bcm58402"
+      ],
+      "source_files": [
+        "soc/brcm/bcmvk/soc.yml"
+      ]
+    },
+    "bflb": {
+      "series": [
+        "bl60x",
+        "bl616cl",
+        "bl61x",
+        "bl70x",
+        "bl70xl",
+        "bl808"
+      ],
+      "socs": [
+        "bl602c00q2i",
+        "bl602c20q2i",
+        "bl602c20q2is",
+        "bl602c40q2is",
+        "bl602l10q2h",
+        "bl602l20q2h",
+        "bl604e20q2i",
+        "bl616c50q2i",
+        "bl616cl3240",
+        "bl616cl3250",
+        "bl616cl3260",
+        "bl616cl4845",
+        "bl616cl4846",
+        "bl616cl4855",
+        "bl616cl4856",
+        "bl616cl4865",
+        "bl616cl4866",
+        "bl616s50q2i",
+        "bl618m05q2i",
+        "bl618m50q2i",
+        "bl618m65q2i",
+        "bl702c10q2h",
+        "bl702l10q2i",
+        "bl702la0q2i",
+        "bl702s10q2i",
+        "bl702sa0q2i",
+        "bl704l10q2iw",
+        "bl704l20q2iw",
+        "bl704l22q2h",
+        "bl706c00q2i",
+        "bl706c10q2i",
+        "bl706c22q2i",
+        "bl706s10q2i",
+        "bl808c09q2i",
+        "bl808d09q2i"
+      ],
+      "source_files": [
+        "soc/bflb/soc.yml"
+      ]
+    },
+    "cat1a": {
+      "series": [
+        "psoc6"
+      ],
+      "socs": [
+        "cy8c6016bzi_f04",
+        "cy8c6036bzi_f04",
+        "cy8c6116bzi_f54",
+        "cy8c6117bzi_f34",
+        "cy8c6117fdi_f02",
+        "cy8c6117wi_f34",
+        "cy8c6136bzi_f14",
+        "cy8c6136bzi_f34",
+        "cy8c6136fdi_f42",
+        "cy8c6136fti_f42",
+        "cy8c6137bzi_f14",
+        "cy8c6137bzi_f34",
+        "cy8c6137bzi_f54",
+        "cy8c6137fdi_f02",
+        "cy8c6137wi_f54",
+        "cy8c6144azi_s4f12",
+        "cy8c6144azi_s4f62",
+        "cy8c6144azi_s4f82",
+        "cy8c6144azi_s4f83",
+        "cy8c6144azi_s4f92",
+        "cy8c6144azi_s4f93",
+        "cy8c6144lqi_s4f12",
+        "cy8c6144lqi_s4f62",
+        "cy8c6144lqi_s4f82",
+        "cy8c6144lqi_s4f92",
+        "cy8c6148azi_s2f44",
+        "cy8c6148bzi_s2f44",
+        "cy8c6148fni_s2f43",
+        "cy8c6148lqi_s2f02",
+        "cy8c6148lqi_s2f42",
+        "cy8c614aazi_s2f04",
+        "cy8c614aazi_s2f14",
+        "cy8c614aazi_s2f44",
+        "cy8c614abzi_s2f04",
+        "cy8c614abzi_s2f44",
+        "cy8c614afni_s2f03",
+        "cy8c614afni_s2f43",
+        "cy8c614alqi_s2f02",
+        "cy8c614alqi_s2f42",
+        "cy8c6244azi_s4d12",
+        "cy8c6244azi_s4d62",
+        "cy8c6244azi_s4d82",
+        "cy8c6244azi_s4d83",
+        "cy8c6244azi_s4d92",
+        "cy8c6244azi_s4d93",
+        "cy8c6244lqi_s4d12",
+        "cy8c6244lqi_s4d62",
+        "cy8c6244lqi_s4d82",
+        "cy8c6244lqi_s4d92",
+        "cy8c6246bzi_d04",
+        "cy8c6247",
+        "cy8c6247bfi_d54",
+        "cy8c6247bzi_aud54",
+        "cy8c6247bzi_d34",
+        "cy8c6247bzi_d44",
+        "cy8c6247bzi_d54",
+        "cy8c6247fdi_d02",
+        "cy8c6247fdi_d32",
+        "cy8c6247fdi_d52",
+        "cy8c6247fti_d52",
+        "cy8c6247wi_d54",
+        "cy8c6248azi_s2d14",
+        "cy8c6248azi_s2d44",
+        "cy8c6248bzi_s2d44",
+        "cy8c6248fni_s2d43",
+        "cy8c6248lqi_s2d02",
+        "cy8c6248lqi_s2d42",
+        "cy8c624aazi_s2d14",
+        "cy8c624aazi_s2d44",
+        "cy8c624abzi_d44",
+        "cy8c624abzi_s2d04",
+        "cy8c624abzi_s2d14",
+        "cy8c624abzi_s2d44",
+        "cy8c624abzi_s2d44a0",
+        "cy8c624afni_s2d43",
+        "cy8c624alqi_s2d02",
+        "cy8c624alqi_s2d42",
+        "cy8c6316bzi_blf03",
+        "cy8c6316bzi_blf04",
+        "cy8c6316bzi_blf53",
+        "cy8c6316bzi_blf54",
+        "cy8c6336bzi_bld13",
+        "cy8c6336bzi_bld14",
+        "cy8c6336bzi_blf03",
+        "cy8c6336bzi_blf04",
+        "cy8c6336bzi_bud13",
+        "cy8c6336lqi_blf02",
+        "cy8c6336lqi_blf42",
+        "cy8c6337bzi_blf13",
+        "cy8c6347",
+        "cy8c6347bzi_bld33",
+        "cy8c6347bzi_bld34",
+        "cy8c6347bzi_bld43",
+        "cy8c6347bzi_bld44",
+        "cy8c6347bzi_bld53",
+        "cy8c6347bzi_bld54",
+        "cy8c6347bzi_bud33",
+        "cy8c6347bzi_bud43",
+        "cy8c6347bzi_bud53",
+        "cy8c6347fmi_bld13",
+        "cy8c6347fmi_bld33",
+        "cy8c6347fmi_bld43",
+        "cy8c6347fmi_bld53",
+        "cy8c6347fmi_bud13",
+        "cy8c6347fmi_bud33",
+        "cy8c6347fmi_bud43",
+        "cy8c6347fmi_bud53",
+        "cy8c6347lqi_bld52",
+        "cyb06447bzi_bld53",
+        "cyb06447bzi_bld54",
+        "cyb06447bzi_d54",
+        "cyb0644abzi_s2d44",
+        "cyble_416045_02",
+        "cys0644abzi_s2d44"
+      ],
+      "source_files": [
+        "soc/infineon/cat1a/soc.yml"
+      ]
+    },
+    "cat1b": {
+      "series": [
+        "cyw20829",
+        "psc3"
+      ],
+      "socs": [
+        "cyw20829b0000",
+        "cyw20829b0010",
+        "cyw20829b0lkml",
+        "cyw20829b1000",
+        "cyw20829b1010",
+        "cyw20829b1240",
+        "cyw20829b1340",
+        "cyw89829b0062",
+        "cyw89829b0232",
+        "cyw89829b1062",
+        "cyw89829b1232",
+        "psc3m3edabq1",
+        "psc3m3edacq1",
+        "psc3m3edlgq1",
+        "psc3m3edlhq1",
+        "psc3m3fds2abq1",
+        "psc3m3fds2acq1",
+        "psc3m3fds2lgq1",
+        "psc3m3fds2lhq1",
+        "psc3m5edabq1",
+        "psc3m5edacq1",
+        "psc3m5edafq1",
+        "psc3m5edlgq1",
+        "psc3m5edlhq1",
+        "psc3m5fds2abq1",
+        "psc3m5fds2acq1",
+        "psc3m5fds2afq1",
+        "psc3m5fds2lgq1",
+        "psc3m5fds2lhq1",
+        "psc3m6fds2acq1",
+        "psc3m6fds2afq1",
+        "psc3m6fds2ahq1",
+        "psc3m6ges3acq1",
+        "psc3m6ges3afq1",
+        "psc3m6ges3ahq1",
+        "psc3p2edabq1",
+        "psc3p2edacq1",
+        "psc3p2edlgq1",
+        "psc3p2edlhq1",
+        "psc3p2fds2abq1",
+        "psc3p2fds2acq1",
+        "psc3p2fds2lgq1",
+        "psc3p2fds2lhq1",
+        "psc3p5edabq1",
+        "psc3p5edacq1",
+        "psc3p5edlgq1",
+        "psc3p5edlhq1",
+        "psc3p5fds2abq1",
+        "psc3p5fds2acq1",
+        "psc3p5fds2lgq1",
+        "psc3p5fds2lhq1"
+      ],
+      "source_files": [
+        "soc/infineon/cat1b/soc.yml"
+      ]
+    },
+    "cat1c": {
+      "series": [
+        "cyt4bf",
+        "cyt4dn",
+        "xmc7200"
+      ],
+      "socs": [
+        "cyt4bf8cde",
+        "cyt4bf8cds",
+        "cyt4bf8cee",
+        "cyt4bf8ces",
+        "cyt4bfbche",
+        "cyt4bfbchs",
+        "cyt4bfbcje",
+        "cyt4bfbcjs",
+        "cyt4bfcche",
+        "cyt4bfcchs",
+        "cyt4bfccje",
+        "cyt4bfccjs",
+        "cyt4dnjbzs",
+        "xmc7200_e272k8384",
+        "xmc7200_f176k8384",
+        "xmc7200d_e272k8384",
+        "xmc7200d_f176k8384"
+      ],
+      "source_files": [
+        "soc/infineon/cat1c/soc.yml"
+      ]
+    },
+    "cdac": {
+      "series": [],
+      "socs": [
+        "thejas32"
+      ],
+      "source_files": [
+        "soc/cdac/soc.yml"
+      ]
+    },
+    "cdns_swerv": {
+      "series": [],
+      "socs": [
+        "s400",
+        "s420"
+      ],
+      "source_files": [
+        "soc/cdns/swerv/soc.yml"
+      ]
+    },
+    "ch32v": {
+      "series": [
+        "ch32h41x",
+        "qingke-v2a",
+        "qingke-v2c",
+        "qingke-v3a",
+        "qingke-v4b",
+        "qingke-v4c",
+        "qingke-v4f",
+        "qingke_v3c"
+      ],
+      "socs": [
+        "ch32h417",
+        "ch32v003",
+        "ch32v006",
+        "ch32v103",
+        "ch32v203",
+        "ch32v208",
+        "ch32v303",
+        "ch32v305",
+        "ch32v307",
+        "ch32v317",
+        "ch570",
+        "ch572"
+      ],
+      "source_files": [
+        "soc/wch/ch32v/soc.yml"
+      ]
+    },
+    "edge": {
+      "series": [
+        "pse84"
+      ],
+      "socs": [
+        "pse812gms2dfnc4b",
+        "pse812gms4dfnc4b",
+        "pse812gos2dfnc4b",
+        "pse812gos4dfnc4b",
+        "pse813gms2dbzc4b",
+        "pse813gms2dbzq3b",
+        "pse813gms4dbzc4b",
+        "pse813gms4dbzq3b",
+        "pse813gos2dbzc4b",
+        "pse813gos2dbzq3b",
+        "pse813gos4dbzc4a",
+        "pse813gos4dbzc4b",
+        "pse813gos4dbzq3b",
+        "pse822gms2dfnc4b",
+        "pse822gms4dfnc4b",
+        "pse822gos2dfnc4b",
+        "pse822gos4dfnc4b",
+        "pse823gms2dbzc4b",
+        "pse823gms2dbzq3b",
+        "pse823gms4dbzc4b",
+        "pse823gms4dbzq3b",
+        "pse823gos2dbzc4b",
+        "pse823gos2dbzq3b",
+        "pse823gos4dbzc4b",
+        "pse823gos4dbzq3b",
+        "pse832gms2dfnc4b",
+        "pse832gms4dfnc4b",
+        "pse832gos2dfnc4b",
+        "pse832gos4dfnc4b",
+        "pse833gms2dbzc4b",
+        "pse833gms2dbzq3b",
+        "pse833gms4dbzc4b",
+        "pse833gms4dbzq3b",
+        "pse833gos2dbzc4a",
+        "pse833gos2dbzc4b",
+        "pse833gos2dbzq3b",
+        "pse833gos4dbzc4b",
+        "pse833gos4dbzq3b",
+        "pse845gos2dfmc4b",
+        "pse845gos2dfnc4b",
+        "pse845gos4dfmc4b",
+        "pse845gos4dfnc4b",
+        "pse845gps2dfmc4a",
+        "pse845gps2dfmc4b",
+        "pse845gps2dfnc4a",
+        "pse845gps2dfnc4b",
+        "pse845gps4dfmc4b",
+        "pse845gps4dfnc4b",
+        "pse846gos2dbzc4b",
+        "pse846gos2dbzq3b",
+        "pse846gos4dbzc4b",
+        "pse846gos4dbzq3b",
+        "pse846gps2dbzc4a",
+        "pse846gps2dbzc4b",
+        "pse846gps2dbzq3a",
+        "pse846gps2dbzq3b",
+        "pse846gps4dbzc4a",
+        "pse846gps4dbzc4b",
+        "pse846gps4dbzq3b"
+      ],
+      "source_files": [
+        "soc/infineon/edge/soc.yml"
+      ]
+    },
+    "ensemble": {
+      "series": [
+        "e1c",
+        "e4",
+        "e6",
+        "e8"
+      ],
+      "socs": [
+        "ae1c1f4051920ph0",
+        "ae402fa0e5597le0",
+        "ae612fa0e5597ls0",
+        "ae822fa0e5597bs0",
+        "ae822fa0e5597ls0"
+      ],
+      "source_files": [
+        "soc/alif/ensemble/soc.yml"
+      ]
+    },
+    "espressif_esp32": {
+      "series": [
+        "esp32",
+        "esp32c2",
+        "esp32c3",
+        "esp32c5",
+        "esp32c6",
+        "esp32c61",
+        "esp32h2",
+        "esp32p4",
+        "esp32s2",
+        "esp32s3"
+      ],
+      "socs": [
+        "esp32",
+        "esp32c2",
+        "esp32c3",
+        "esp32c5",
+        "esp32c6",
+        "esp32c61",
+        "esp32h2",
+        "esp32p4",
+        "esp32s2",
+        "esp32s3"
+      ],
+      "source_files": [
+        "soc/espressif/soc.yml"
+      ]
+    },
+    "ganymed": {
+      "series": [
+        "sy1xx"
+      ],
+      "socs": [
+        "sy120_gbm",
+        "sy120_gen1"
+      ],
+      "source_files": [
+        "soc/sensry/soc.yml"
+      ]
+    },
+    "gd_gd32": {
+      "series": [
+        "gd32a50x",
+        "gd32e10x",
+        "gd32e50x",
+        "gd32f3x0",
+        "gd32f403",
+        "gd32f4xx",
+        "gd32l23x",
+        "gd32vf103"
+      ],
+      "socs": [
+        "gd32a503",
+        "gd32e103",
+        "gd32e507",
+        "gd32f350",
+        "gd32f403",
+        "gd32f405",
+        "gd32f407",
+        "gd32f450",
+        "gd32f470",
+        "gd32l233",
+        "gd32vf103"
+      ],
+      "source_files": [
+        "soc/gd/gd32/soc.yml"
+      ]
+    },
+    "infineon_xmc": {
+      "series": [
+        "xmc4xxx"
+      ],
+      "socs": [
+        "xmc4500",
+        "xmc4700",
+        "xmc4800"
+      ],
+      "source_files": [
+        "soc/infineon/cat3/soc.yml"
+      ]
+    },
+    "intel_adsp": {
+      "series": [
+        "intel_adsp_ace",
+        "intel_adsp_cavs"
+      ],
+      "socs": [
+        "ace15_mtpm",
+        "ace20_lnl",
+        "ace30",
+        "ace40",
+        "cavs25"
+      ],
+      "source_files": [
+        "soc/intel/intel_adsp/soc.yml"
+      ]
+    },
+    "intel_ish": {
+      "series": [
+        "intel_ish5"
+      ],
+      "socs": [
+        "intel_ish_5_4_1",
+        "intel_ish_5_6_0",
+        "intel_ish_5_8_0"
+      ],
+      "source_files": [
+        "soc/intel/intel_ish/soc.yml"
+      ]
+    },
+    "intel_niosv": {
+      "series": [
+        "niosv"
+      ],
+      "socs": [
+        "niosv_g",
+        "niosv_m"
+      ],
+      "source_files": [
+        "soc/intel/intel_niosv/soc.yml"
+      ]
+    },
+    "intel_socfpga": {
+      "series": [
+        "agilex",
+        "agilex5"
+      ],
+      "socs": [
+        "agilex",
+        "agilex5"
+      ],
+      "source_files": [
+        "soc/intel/intel_socfpga/soc.yml"
+      ]
+    },
+    "intel_socfpga_std": {
+      "series": [
+        "cyclonev"
+      ],
+      "socs": [
+        "cyclonev"
+      ],
+      "source_files": [
+        "soc/intel/intel_socfpga_std/soc.yml"
+      ]
+    },
+    "ite_ec": {
+      "series": [
+        "it51xxx",
+        "it8xxxx"
+      ],
+      "socs": [
+        "it51526aw",
+        "it51526bw",
+        "it81202bx",
+        "it81202cx",
+        "it81202dx",
+        "it81302bx",
+        "it81302cx",
+        "it81302dx",
+        "it82000bw",
+        "it82002aw",
+        "it82002bw",
+        "it82202ax",
+        "it82202bw",
+        "it82302ax",
+        "it82302bw"
+      ],
+      "source_files": [
+        "soc/ite/ec/soc.yml"
+      ]
+    },
+    "kb106x": {
+      "series": [
+        "kb106x"
+      ],
+      "socs": [
+        "kb1062",
+        "kb1064"
+      ],
+      "source_files": [
+        "soc/ene/kb106x/soc.yml"
+      ]
+    },
+    "kinetis": {
+      "series": [
+        "k2x",
+        "k32lx",
+        "k6x",
+        "k8x",
+        "ke1xf",
+        "ke1xz",
+        "kl2x",
+        "kv5x",
+        "kwx"
+      ],
+      "socs": [
+        "k32l2b31a",
+        "mk22f12",
+        "mk22f51212",
+        "mk64f12",
+        "mk66f18",
+        "mk80f25615",
+        "mk82f25615",
+        "mke15z4",
+        "mke15z7",
+        "mke16z4",
+        "mke17z7",
+        "mke17z9",
+        "mke18f16",
+        "mkl25z4",
+        "mkv56f24",
+        "mkv58f24",
+        "mkw22d5",
+        "mkw24d5",
+        "mkw40z4",
+        "mkw41z4"
+      ],
+      "source_files": [
+        "soc/nxp/kinetis/soc.yml"
+      ]
+    },
+    "litex": {
+      "series": [
+        "litex_vexiiriscv",
+        "litex_vexriscv"
+      ],
+      "socs": [
+        "litex_vexiiriscv",
+        "litex_vexriscv"
+      ],
+      "source_files": [
+        "soc/litex/soc.yml"
+      ]
+    },
+    "lpc": {
+      "series": [
+        "lpc11u6x",
+        "lpc51u68",
+        "lpc54xxx",
+        "lpc55xxx",
+        "lpc84x"
+      ],
+      "socs": [
+        "lpc11u66",
+        "lpc11u67",
+        "lpc11u68",
+        "lpc51u68",
+        "lpc54114",
+        "lpc54628",
+        "lpc55s06",
+        "lpc55s16",
+        "lpc55s26",
+        "lpc55s28",
+        "lpc55s36",
+        "lpc55s69",
+        "lpc845"
+      ],
+      "source_files": [
+        "soc/nxp/lpc/soc.yml"
+      ]
+    },
+    "max32": {
+      "series": [],
+      "socs": [
+        "max32650",
+        "max32651",
+        "max32655",
+        "max32657",
+        "max32658",
+        "max32660",
+        "max32662",
+        "max32666",
+        "max32670",
+        "max32672",
+        "max32675",
+        "max32680",
+        "max32690",
+        "max78000",
+        "max78002"
+      ],
+      "source_files": [
+        "soc/adi/max32/soc.yml"
+      ]
+    },
+    "mcxa": {
+      "series": [
+        "mcxa1x3",
+        "mcxa1x6",
+        "mcxaxx4",
+        "mcxaxx6",
+        "mcxaxx7"
+      ],
+      "socs": [
+        "mcxa153",
+        "mcxa156",
+        "mcxa266",
+        "mcxa344",
+        "mcxa346",
+        "mcxa366",
+        "mcxa537",
+        "mcxa577"
+      ],
+      "source_files": [
+        "soc/nxp/mcx/soc.yml"
+      ]
+    },
+    "mcxc": {
+      "series": [],
+      "socs": [
+        "mcxc141",
+        "mcxc142",
+        "mcxc242",
+        "mcxc444"
+      ],
+      "source_files": [
+        "soc/nxp/mcx/soc.yml"
+      ]
+    },
+    "mcxe": {
+      "series": [
+        "mcxe24x",
+        "mcxe31x"
+      ],
+      "socs": [
+        "mcxe245",
+        "mcxe246",
+        "mcxe247",
+        "mcxe315",
+        "mcxe316",
+        "mcxe317",
+        "mcxe31b"
+      ],
+      "source_files": [
+        "soc/nxp/mcx/soc.yml"
+      ]
+    },
+    "mcxl": {
+      "series": [
+        "mcxl25x"
+      ],
+      "socs": [
+        "mcxl253",
+        "mcxl254",
+        "mcxl255"
+      ],
+      "source_files": [
+        "soc/nxp/mcx/soc.yml"
+      ]
+    },
+    "mcxn": {
+      "series": [],
+      "socs": [
+        "mcxn236",
+        "mcxn547",
+        "mcxn947"
+      ],
+      "source_files": [
+        "soc/nxp/mcx/soc.yml"
+      ]
+    },
+    "mcxw": {
+      "series": [
+        "mcxw2xx",
+        "mcxw7xx"
+      ],
+      "socs": [
+        "mcxw235",
+        "mcxw236",
+        "mcxw70ac",
+        "mcxw716c",
+        "mcxw727c"
+      ],
+      "source_files": [
+        "soc/nxp/mcx/soc.yml"
+      ]
+    },
+    "microchip": {
+      "series": [
+        "smartfusion2"
+      ],
+      "socs": [
+        "m2s010"
+      ],
+      "source_files": [
+        "soc/microchip/smartfusion2/soc.yml"
+      ]
+    },
+    "microchip_mec": {
+      "series": [
+        "mec15xx",
+        "mec165xb",
+        "mec172x",
+        "mec174x",
+        "mec175x"
+      ],
+      "socs": [
+        "mec1501_hsz",
+        "mec1653b_nsz",
+        "mec172x_nlj",
+        "mec172x_nsz",
+        "mec1743_qlj",
+        "mec1743_qsz",
+        "mec1753_qlj",
+        "mec1753_qsz"
+      ],
+      "source_files": [
+        "soc/microchip/mec/soc.yml"
+      ]
+    },
+    "microchip_miv": {
+      "series": [
+        "miv",
+        "polarfire"
+      ],
+      "socs": [
+        "miv",
+        "polarfire"
+      ],
+      "source_files": [
+        "soc/microchip/miv/soc.yml"
+      ]
+    },
+    "microchip_pic32ck_sg_gc": {
+      "series": [
+        "pic32ck_gc00",
+        "pic32ck_gc01",
+        "pic32ck_sg00",
+        "pic32ck_sg01"
+      ],
+      "socs": [
+        "pic32ck0512gc00064",
+        "pic32ck0512gc00100",
+        "pic32ck0512gc01064",
+        "pic32ck0512gc01100",
+        "pic32ck0512sg00064",
+        "pic32ck0512sg00100",
+        "pic32ck0512sg01064",
+        "pic32ck0512sg01100",
+        "pic32ck1012gc00048",
+        "pic32ck1012gc00064",
+        "pic32ck1012gc00100",
+        "pic32ck1012gc01048",
+        "pic32ck1012gc01064",
+        "pic32ck1012gc01100",
+        "pic32ck1012sg00048",
+        "pic32ck1012sg00064",
+        "pic32ck1012sg00100",
+        "pic32ck1012sg01048",
+        "pic32ck1012sg01064",
+        "pic32ck1012sg01100",
+        "pic32ck1025gc00064",
+        "pic32ck1025gc00100",
+        "pic32ck1025gc01064",
+        "pic32ck1025gc01100",
+        "pic32ck1025sg00064",
+        "pic32ck1025sg00100",
+        "pic32ck1025sg00144",
+        "pic32ck1025sg01064",
+        "pic32ck1025sg01100",
+        "pic32ck1025sg01144",
+        "pic32ck2051gc00064",
+        "pic32ck2051gc00100",
+        "pic32ck2051gc00144",
+        "pic32ck2051gc01064",
+        "pic32ck2051gc01100",
+        "pic32ck2051gc01144",
+        "pic32ck2051sg00064",
+        "pic32ck2051sg00100",
+        "pic32ck2051sg00144",
+        "pic32ck2051sg01064",
+        "pic32ck2051sg01100",
+        "pic32ck2051sg01144"
+      ],
+      "source_files": [
+        "soc/microchip/pic32c/pic32ck_sg_gc/soc.yml"
+      ]
+    },
+    "microchip_pic32cm_jh": {
+      "series": [
+        "pic32cm_jh00",
+        "pic32cm_jh01"
+      ],
+      "socs": [
+        "pic32cm1216jh01032",
+        "pic32cm1216jh01048",
+        "pic32cm2532jh00032",
+        "pic32cm2532jh00048",
+        "pic32cm2532jh00064",
+        "pic32cm2532jh00100",
+        "pic32cm2532jh01032",
+        "pic32cm2532jh01048",
+        "pic32cm2532jh01064",
+        "pic32cm2532jh01100",
+        "pic32cm5164jh00032",
+        "pic32cm5164jh00048",
+        "pic32cm5164jh00064",
+        "pic32cm5164jh00100",
+        "pic32cm5164jh01032",
+        "pic32cm5164jh01048",
+        "pic32cm5164jh01064",
+        "pic32cm5164jh01100"
+      ],
+      "source_files": [
+        "soc/microchip/pic32c/pic32cm_jh/soc.yml"
+      ]
+    },
+    "microchip_pic32cm_pl": {
+      "series": [
+        "pic32cm_pl10"
+      ],
+      "socs": [
+        "pic32cm6408pl10028",
+        "pic32cm6408pl10032",
+        "pic32cm6408pl10048",
+        "pic32cm6408pl10064"
+      ],
+      "source_files": [
+        "soc/microchip/pic32c/pic32cm_pl/soc.yml"
+      ]
+    },
+    "microchip_pic32cm_sg_gc": {
+      "series": [
+        "pic32cm_gc00",
+        "pic32cm_sg00"
+      ],
+      "socs": [
+        "pic32cm5112gc00048",
+        "pic32cm5112gc00064",
+        "pic32cm5112gc00100",
+        "pic32cm5112sg00048",
+        "pic32cm5112sg00064",
+        "pic32cm5112sg00100"
+      ],
+      "source_files": [
+        "soc/microchip/pic32c/pic32cm_sg_gc/soc.yml"
+      ]
+    },
+    "microchip_pic32cx_sg": {
+      "series": [
+        "pic32cx_sg41",
+        "pic32cx_sg60",
+        "pic32cx_sg61"
+      ],
+      "socs": [
+        "pic32cx1025sg41064",
+        "pic32cx1025sg41080",
+        "pic32cx1025sg41100",
+        "pic32cx1025sg41128",
+        "pic32cx1025sg60100",
+        "pic32cx1025sg60128",
+        "pic32cx1025sg61100",
+        "pic32cx1025sg61128"
+      ],
+      "source_files": [
+        "soc/microchip/pic32c/pic32cx_sg/soc.yml"
+      ]
+    },
+    "microchip_pic32cz_ca": {
+      "series": [
+        "pic32cz_ca80",
+        "pic32cz_ca90",
+        "pic32cz_ca91"
+      ],
+      "socs": [
+        "pic32cz2051ca80100",
+        "pic32cz2051ca80144",
+        "pic32cz2051ca80176",
+        "pic32cz2051ca80208",
+        "pic32cz2051ca90100",
+        "pic32cz2051ca90144",
+        "pic32cz2051ca90176",
+        "pic32cz2051ca90208",
+        "pic32cz2051ca91100",
+        "pic32cz2051ca91144",
+        "pic32cz2051ca91176",
+        "pic32cz4010ca80100",
+        "pic32cz4010ca80144",
+        "pic32cz4010ca80176",
+        "pic32cz4010ca80208",
+        "pic32cz4010ca90100",
+        "pic32cz4010ca90144",
+        "pic32cz4010ca90176",
+        "pic32cz4010ca90208",
+        "pic32cz4010ca91100",
+        "pic32cz4010ca91144",
+        "pic32cz4010ca91176",
+        "pic32cz4010ca91208",
+        "pic32cz8110ca80100",
+        "pic32cz8110ca80144",
+        "pic32cz8110ca80176",
+        "pic32cz8110ca80208",
+        "pic32cz8110ca90100",
+        "pic32cz8110ca90144",
+        "pic32cz8110ca90176",
+        "pic32cz8110ca90208"
+      ],
+      "source_files": [
+        "soc/microchip/pic32c/pic32cz_ca/soc.yml"
+      ]
+    },
+    "microchip_pic64": {
+      "series": [
+        "pic64gx"
+      ],
+      "socs": [
+        "pic64gx1000"
+      ],
+      "source_files": [
+        "soc/microchip/pic64/soc.yml"
+      ]
+    },
+    "microchip_sam_d5x_e5x": {
+      "series": [
+        "atsamd51",
+        "atsame51",
+        "atsame53",
+        "atsame54"
+      ],
+      "socs": [
+        "atsamd51g18a",
+        "atsamd51g19a",
+        "atsamd51j18a",
+        "atsamd51j19a",
+        "atsamd51j20a",
+        "atsamd51n19a",
+        "atsamd51n20a",
+        "atsamd51p19a",
+        "atsamd51p20a",
+        "atsame51g18a",
+        "atsame51g19a",
+        "atsame51j18a",
+        "atsame51j19a",
+        "atsame51j20a",
+        "atsame51n19a",
+        "atsame51n20a",
+        "atsame53j18a",
+        "atsame53j19a",
+        "atsame53j20a",
+        "atsame53n19a",
+        "atsame53n20a",
+        "atsame54n19a",
+        "atsame54n20a",
+        "atsame54p19a",
+        "atsame54p20a"
+      ],
+      "source_files": [
+        "soc/microchip/sam/sam_d5x_e5x/soc.yml"
+      ]
+    },
+    "microchip_sama5": {
+      "series": [
+        "sama5d2"
+      ],
+      "socs": [
+        "sama5d21",
+        "sama5d22",
+        "sama5d225cd1m",
+        "sama5d23",
+        "sama5d24",
+        "sama5d26",
+        "sama5d27",
+        "sama5d27cd1g",
+        "sama5d27cd5m",
+        "sama5d27cld1g",
+        "sama5d27cld2g",
+        "sama5d27som1",
+        "sama5d27wlsom1",
+        "sama5d28",
+        "sama5d28cd1g",
+        "sama5d28cld1g",
+        "sama5d28cld2g",
+        "sama5d29",
+        "sama5d29ta100"
+      ],
+      "source_files": [
+        "soc/microchip/sam/sama5/soc.yml"
+      ]
+    },
+    "microchip_sama7": {
+      "series": [
+        "sama7d6",
+        "sama7g5"
+      ],
+      "socs": [
+        "sama7d65",
+        "sama7d65d1g",
+        "sama7d65d1gn2",
+        "sama7d65d2g",
+        "sama7d65d2gn8",
+        "sama7d65d5m",
+        "sama7g54",
+        "sama7g54d1g",
+        "sama7g54d1gn0",
+        "sama7g54d1gn2",
+        "sama7g54d2g",
+        "sama7g54d2gn4",
+        "sama7g54d4g"
+      ],
+      "source_files": [
+        "soc/microchip/sam/sama7/soc.yml"
+      ]
+    },
+    "mt8xxx": {
+      "series": [
+        "mt818x",
+        "mt8195",
+        "mt8196",
+        "mt8365"
+      ],
+      "socs": [
+        "mt8186",
+        "mt8188",
+        "mt8195",
+        "mt8196",
+        "mt8365"
+      ],
+      "source_files": [
+        "soc/mediatek/mt8xxx/soc.yml"
+      ]
+    },
+    "native": {
+      "series": [],
+      "socs": [
+        "native"
+      ],
+      "source_files": [
+        "soc/native/inf_clock/soc.yml"
+      ]
+    },
+    "nordic_nrf": {
+      "series": [
+        "nrf51",
+        "nrf52",
+        "nrf53",
+        "nrf54h",
+        "nrf54l",
+        "nrf71",
+        "nrf91",
+        "nrf92"
+      ],
+      "socs": [
+        "nrf51822",
+        "nrf52805",
+        "nrf52810",
+        "nrf52811",
+        "nrf52820",
+        "nrf52832",
+        "nrf52833",
+        "nrf52840",
+        "nrf5340",
+        "nrf54h20",
+        "nrf54l05",
+        "nrf54l10",
+        "nrf54l15",
+        "nrf54lm20a",
+        "nrf54lm20b",
+        "nrf54lv10a",
+        "nrf7120",
+        "nrf7120e",
+        "nrf9131",
+        "nrf9151",
+        "nrf9160",
+        "nrf9161",
+        "nrf9280"
+      ],
+      "source_files": [
+        "soc/nordic/soc.yml"
+      ]
+    },
+    "npcm": {
+      "series": [
+        "npcm4"
+      ],
+      "socs": [
+        "npcm400"
+      ],
+      "source_files": [
+        "soc/nuvoton/npcm/soc.yml"
+      ]
+    },
+    "npcx": {
+      "series": [
+        "npck3",
+        "npcx4",
+        "npcx7",
+        "npcx9"
+      ],
+      "socs": [
+        "npck3m8k",
+        "npcx4m3f",
+        "npcx4m8f",
+        "npcx7m6fb",
+        "npcx7m6fc",
+        "npcx7m7fc",
+        "npcx9m3f",
+        "npcx9m6f",
+        "npcx9m7f",
+        "npcx9m7fb",
+        "npcx9mfp"
+      ],
+      "source_files": [
+        "soc/nuvoton/npcx/soc.yml"
+      ]
+    },
+    "nsim_arc_classic": {
+      "series": [
+        "nsim_em",
+        "nsim_hs",
+        "nsim_sem",
+        "nsim_vpx5"
+      ],
+      "socs": [
+        "nsim_em",
+        "nsim_em11d",
+        "nsim_em7d_v22",
+        "nsim_hs",
+        "nsim_hs5x",
+        "nsim_hs5x_smp",
+        "nsim_hs6x",
+        "nsim_hs6x_smp",
+        "nsim_hs_mpuv6",
+        "nsim_hs_smp",
+        "nsim_sem",
+        "nsim_vpx5"
+      ],
+      "source_files": [
+        "soc/snps/nsim/arc_classic/soc.yml"
+      ]
+    },
+    "nsim_arc_v": {
+      "series": [
+        "rhx",
+        "rmx"
+      ],
+      "socs": [
+        "rhx100",
+        "rmx100"
+      ],
+      "source_files": [
+        "soc/snps/nsim/arc_v/soc.yml"
+      ]
+    },
+    "numaker": {
+      "series": [
+        "m031x",
+        "m2l31x",
+        "m333x",
+        "m335x",
+        "m46x",
+        "m55m1x"
+      ],
+      "socs": [
+        "m031xxx",
+        "m2l31xxx",
+        "m333xxx",
+        "m335xxx",
+        "m467",
+        "m55m1xxx"
+      ],
+      "source_files": [
+        "soc/nuvoton/numaker/soc.yml"
+      ]
+    },
+    "numicro": {
+      "series": [
+        "m48x"
+      ],
+      "socs": [
+        "m487"
+      ],
+      "source_files": [
+        "soc/nuvoton/numicro/soc.yml"
+      ]
+    },
+    "nxp_imx": {
+      "series": [
+        "imx6sx",
+        "imx7d",
+        "imx8",
+        "imx8m",
+        "imx8ulp",
+        "imx8x",
+        "imx9"
+      ],
+      "socs": [
+        "mcimx6x",
+        "mcimx7d",
+        "mimx8ml8",
+        "mimx8mm6",
+        "mimx8mn6",
+        "mimx8mq6",
+        "mimx8qm6",
+        "mimx8qx6",
+        "mimx8ud7",
+        "mimx9111",
+        "mimx9131",
+        "mimx9352",
+        "mimx94398",
+        "mimx9529",
+        "mimx9596"
+      ],
+      "source_files": [
+        "soc/nxp/imx/soc.yml"
+      ]
+    },
+    "nxp_imxrt": {
+      "series": [
+        "imxrt10xx",
+        "imxrt118x",
+        "imxrt11xx",
+        "imxrt5xx",
+        "imxrt6xx",
+        "imxrt7xx"
+      ],
+      "socs": [
+        "mimxrt1011",
+        "mimxrt1015",
+        "mimxrt1021",
+        "mimxrt1024",
+        "mimxrt1041",
+        "mimxrt1042",
+        "mimxrt1052",
+        "mimxrt1062",
+        "mimxrt1064",
+        "mimxrt1151",
+        "mimxrt1152",
+        "mimxrt1166",
+        "mimxrt1176",
+        "mimxrt1181",
+        "mimxrt1182",
+        "mimxrt1185",
+        "mimxrt1186",
+        "mimxrt1187",
+        "mimxrt1189",
+        "mimxrt118c",
+        "mimxrt595s",
+        "mimxrt685s",
+        "mimxrt735s",
+        "mimxrt758s",
+        "mimxrt798s"
+      ],
+      "source_files": [
+        "soc/nxp/imxrt/soc.yml"
+      ]
+    },
+    "nxp_layerscape": {
+      "series": [
+        "ls1046a"
+      ],
+      "socs": [
+        "ls1046a"
+      ],
+      "source_files": [
+        "soc/nxp/layerscape/soc.yml"
+      ]
+    },
+    "nxp_rw": {
+      "series": [
+        "rw61x"
+      ],
+      "socs": [
+        "rw610",
+        "rw612"
+      ],
+      "source_files": [
+        "soc/nxp/rw/soc.yml"
+      ]
+    },
+    "nxp_s32": {
+      "series": [
+        "s32k1",
+        "s32k3",
+        "s32k5",
+        "s32ze"
+      ],
+      "socs": [
+        "s32k116",
+        "s32k118",
+        "s32k142",
+        "s32k142w",
+        "s32k144",
+        "s32k144w",
+        "s32k146",
+        "s32k148",
+        "s32k344",
+        "s32k566",
+        "s32z270"
+      ],
+      "source_files": [
+        "soc/nxp/s32/soc.yml"
+      ]
+    },
+    "openhwgroup_cva6": {
+      "series": [
+        "cv32a6",
+        "cv64a6"
+      ],
+      "socs": [
+        "cv32a6",
+        "cv64a6"
+      ],
+      "source_files": [
+        "soc/openhwgroup/cva6/soc.yml"
+      ]
+    },
+    "psoc4": {
+      "series": [
+        "psoc4100smax",
+        "psoc4100tp"
+      ],
+      "socs": [
+        "cy8c4146axi_t403",
+        "cy8c4146axi_t413",
+        "cy8c4146axi_t453",
+        "cy8c4146azi_t403",
+        "cy8c4146azi_t405",
+        "cy8c4146azi_t413",
+        "cy8c4146azi_t415",
+        "cy8c4146azi_t453",
+        "cy8c4146azi_t455",
+        "cy8c4146azq_t413",
+        "cy8c4146azq_t453",
+        "cy8c4146lqi_t403",
+        "cy8c4146lqi_t413",
+        "cy8c4146lqi_t453",
+        "cy8c4147axi_t403",
+        "cy8c4147axi_t413",
+        "cy8c4147axi_t453",
+        "cy8c4147axi_t463",
+        "cy8c4147axi_t473",
+        "cy8c4147axq_t493",
+        "cy8c4147azi_t403",
+        "cy8c4147azi_t405",
+        "cy8c4147azi_t413",
+        "cy8c4147azi_t415",
+        "cy8c4147azi_t453",
+        "cy8c4147azi_t455",
+        "cy8c4147azi_t463",
+        "cy8c4147azi_t465",
+        "cy8c4147azi_t473",
+        "cy8c4147azi_t475",
+        "cy8c4147azq_t415",
+        "cy8c4147azq_t455",
+        "cy8c4147azq_t493",
+        "cy8c4147azq_t495",
+        "cy8c4147lqi_t403",
+        "cy8c4147lqi_t413",
+        "cy8c4147lqi_t453",
+        "cy8c4147lqi_t463",
+        "cy8c4147lqi_t473",
+        "cy8c4147lqq_t493",
+        "cy8c4149azi_s598"
+      ],
+      "source_files": [
+        "soc/infineon/psoc4/soc.yml"
+      ]
+    },
+    "qemu_virt_riscv": {
+      "series": [],
+      "socs": [
+        "qemu_virt_riscv32",
+        "qemu_virt_riscv32e",
+        "qemu_virt_riscv64"
+      ],
+      "source_files": [
+        "soc/qemu/virt_riscv/soc.yml"
+      ]
+    },
+    "realtek_ameba": {
+      "series": [
+        "amebad",
+        "amebadplus",
+        "amebag2"
+      ],
+      "socs": [
+        "rtl8721dx",
+        "rtl8721f",
+        "rtl872xd"
+      ],
+      "source_files": [
+        "soc/realtek/ameba/soc.yml"
+      ]
+    },
+    "realtek_bee": {
+      "series": [
+        "rtl8752h",
+        "rtl87x2g"
+      ],
+      "socs": [
+        "rtl8752hjf",
+        "rtl8752hjl",
+        "rtl8752hkf",
+        "rtl8752hmf",
+        "rtl8762gc",
+        "rtl8762gkh",
+        "rtl8762gku",
+        "rtl8762grh",
+        "rtl8762gru",
+        "rtl8762gth",
+        "rtl8762gtp",
+        "rtl8762gtu",
+        "rtl8772gwf",
+        "rtl8772gwp"
+      ],
+      "source_files": [
+        "soc/realtek/bee/soc.yml"
+      ]
+    },
+    "realtek_fingerprint": {
+      "series": [],
+      "socs": [
+        "rts5817"
+      ],
+      "source_files": [
+        "soc/realtek/fingerprint/soc.yml"
+      ]
+    },
+    "renesas_ra": {
+      "series": [
+        "ra0e1",
+        "ra2a1",
+        "ra2l1",
+        "ra4c1",
+        "ra4e1",
+        "ra4e2",
+        "ra4l1",
+        "ra4m1",
+        "ra4m2",
+        "ra4m3",
+        "ra4t1",
+        "ra4w1",
+        "ra6e1",
+        "ra6e2",
+        "ra6m1",
+        "ra6m2",
+        "ra6m3",
+        "ra6m4",
+        "ra6m5",
+        "ra8d1",
+        "ra8d2",
+        "ra8e1",
+        "ra8m1",
+        "ra8m2",
+        "ra8p1",
+        "ra8t1",
+        "ra8t2"
+      ],
+      "socs": [
+        "r7fa0e1053cfj",
+        "r7fa0e1053cnh",
+        "r7fa0e1053cnk",
+        "r7fa0e1053cnl",
+        "r7fa0e1053csc",
+        "r7fa0e1073cfj",
+        "r7fa0e1073cnh",
+        "r7fa0e1073cnk",
+        "r7fa0e1073cnl",
+        "r7fa0e1073csc",
+        "r7fa0e1073csd",
+        "r7fa2a1ab3cfm",
+        "r7fa2l1a9xxfl",
+        "r7fa2l1a9xxfm",
+        "r7fa2l1a9xxfn",
+        "r7fa2l1a9xxfp",
+        "r7fa2l1a9xxne",
+        "r7fa2l1abxxfl",
+        "r7fa2l1abxxfm",
+        "r7fa2l1abxxfn",
+        "r7fa2l1abxxfp",
+        "r7fa2l1abxxne",
+        "r7fa4c1bd3cfp",
+        "r7fa4e10d2cfm",
+        "r7fa4e10d2cne",
+        "r7fa4e2b93cfm",
+        "r7fa4l1bd4cfp",
+        "r7fa4m1ab3cfm",
+        "r7fa4m1ab3cfp",
+        "r7fa4m1ab3cne",
+        "r7fa4m2ad3cfp",
+        "r7fa4m3af3cfb",
+        "r7fa4t1b93cfj",
+        "r7fa4t1b93cfl",
+        "r7fa4t1b93cfm",
+        "r7fa4t1b93cne",
+        "r7fa4t1b93cnh",
+        "r7fa4t1bb3cfj",
+        "r7fa4t1bb3cfl",
+        "r7fa4t1bb3cfm",
+        "r7fa4t1bb3cne",
+        "r7fa4t1bb3cnh",
+        "r7fa4w1ad2cng",
+        "r7fa6e10f2cfp",
+        "r7fa6e2bb3cfm",
+        "r7fa6m1ad3cfp",
+        "r7fa6m2af3cfb",
+        "r7fa6m3af2cbg",
+        "r7fa6m3ah3cfc",
+        "r7fa6m4af3cfb",
+        "r7fa6m5bh3cfc",
+        "r7fa8d1bhecbd",
+        "r7fa8e1afdcfb",
+        "r7fa8e1afdcfp",
+        "r7fa8m1ahecbd",
+        "r7fa8t1ahecbd",
+        "r7ka8d2kflcac",
+        "r7ka8m2jflcac",
+        "r7ka8p1kflcac",
+        "r7ka8t2lflcac"
+      ],
+      "source_files": [
+        "soc/renesas/ra/soc.yml"
+      ]
+    },
+    "renesas_rcar": {
+      "series": [
+        "rcar_gen3",
+        "rcar_gen4",
+        "rcar_gen5"
+      ],
+      "socs": [
+        "r8a77951",
+        "r8a77961",
+        "r8a779f0",
+        "r8a779g0",
+        "r8a78000"
+      ],
+      "source_files": [
+        "soc/renesas/rcar/soc.yml"
+      ]
+    },
+    "renesas_rx": {
+      "series": [
+        "rx130",
+        "rx140",
+        "rx14t",
+        "rx261",
+        "rx26t",
+        "rx62n"
+      ],
+      "socs": [
+        "r5f51308axfp",
+        "r5f51406bdfn",
+        "r5f51406bgfn",
+        "r5f514t5amfm",
+        "r5f52618bgfp",
+        "r5f526tfddfp",
+        "r5f562n8"
+      ],
+      "source_files": [
+        "soc/renesas/rx/soc.yml"
+      ]
+    },
+    "renesas_rz": {
+      "series": [
+        "rza2m",
+        "rza3m",
+        "rza3ul",
+        "rzg2l",
+        "rzg2ul",
+        "rzg3e",
+        "rzg3s",
+        "rzn2h",
+        "rzn2l",
+        "rzt2h",
+        "rzt2l",
+        "rzt2m",
+        "rzv2h",
+        "rzv2l",
+        "rzv2n"
+      ],
+      "socs": [
+        "r7s921053vcbg",
+        "r9a07g043u11gbg",
+        "r9a07g044c22gbg",
+        "r9a07g044l23gbg",
+        "r9a07g054l23gbg",
+        "r9a07g063u02gbg",
+        "r9a07g066m04gbg",
+        "r9a07g074m04gbg",
+        "r9a07g075m24gbg",
+        "r9a07g084m04gbg",
+        "r9a08g045s33gbg",
+        "r9a09g047e57gbg",
+        "r9a09g056n48gbg",
+        "r9a09g057h44gbg",
+        "r9a09g077m44gbg",
+        "r9a09g087m44gbg"
+      ],
+      "source_files": [
+        "soc/renesas/rz/soc.yml"
+      ]
+    },
+    "renesas_smartbond": {
+      "series": [
+        "da1469x"
+      ],
+      "socs": [
+        "da14695",
+        "da14697",
+        "da14699"
+      ],
+      "source_files": [
+        "soc/renesas/smartbond/soc.yml"
+      ]
+    },
+    "rockchip": {
+      "series": [
+        "rk3399",
+        "rk35",
+        "rv1106"
+      ],
+      "socs": [
+        "rk3399",
+        "rk3568",
+        "rk3588",
+        "rk3588s",
+        "rv1106"
+      ],
+      "source_files": [
+        "soc/rockchip/soc.yml"
+      ]
+    },
+    "rpi_pico": {
+      "series": [
+        "rp2040",
+        "rp2350"
+      ],
+      "socs": [
+        "rp2040",
+        "rp2350a",
+        "rp2350b"
+      ],
+      "source_files": [
+        "soc/raspberrypi/rpi_pico/soc.yml"
+      ]
+    },
+    "sf32": {
+      "series": [
+        "sf32lb52x"
+      ],
+      "socs": [
+        "sf32lb520u36",
+        "sf32lb523ub6",
+        "sf32lb525uc6",
+        "sf32lb527ud6",
+        "sf32lb52bu36",
+        "sf32lb52eub6",
+        "sf32lb52guc6",
+        "sf32lb52jud6"
+      ],
+      "source_files": [
+        "soc/sifli/sf32/soc.yml"
+      ]
+    },
+    "shakti": {
+      "series": [],
+      "socs": [
+        "ganga"
+      ],
+      "source_files": [
+        "soc/shakti/soc.yml"
+      ]
+    },
+    "sifive_freedom": {
+      "series": [
+        "fe300",
+        "fu500",
+        "fu700"
+      ],
+      "socs": [
+        "fe310_g000",
+        "fe310_g002",
+        "fu540",
+        "fu740"
+      ],
+      "source_files": [
+        "soc/sifive/sifive_freedom/soc.yml"
+      ]
+    },
+    "silabs_s0": {
+      "series": [
+        "efm32hg",
+        "efm32tg",
+        "efm32wg"
+      ],
+      "socs": [
+        "efm32hg309f64",
+        "efm32hg322f64",
+        "efm32tg840f32",
+        "efm32wg990f256"
+      ],
+      "source_files": [
+        "soc/silabs/soc.yml"
+      ]
+    },
+    "silabs_s1": {
+      "series": [
+        "efm32gg11b",
+        "efm32gg12b",
+        "efm32jg12b",
+        "efm32pg12b",
+        "efm32pg1b",
+        "efr32bg13p",
+        "efr32fg13p",
+        "efr32fg1p",
+        "efr32mg12p",
+        "efr32mg13p"
+      ],
+      "socs": [
+        "efm32gg11b820f2048gl192",
+        "efm32gg11b820f2048gm64",
+        "efm32gg12b810f1024gm64",
+        "efm32jg12b500f1024gl125",
+        "efm32pg12b500f1024gl125",
+        "efm32pg1b200f256gm48",
+        "efr32bg13p632f512gm48",
+        "efr32fg13p233f512gm48",
+        "efr32fg1p133f256gm48",
+        "efr32mg12p332f1024gl125",
+        "efr32mg12p432f1024gl125",
+        "efr32mg12p433f1024gm68",
+        "efr32mg13p732f512gm48"
+      ],
+      "source_files": [
+        "soc/silabs/soc.yml"
+      ]
+    },
+    "silabs_s2": {
+      "series": [
+        "bgm22",
+        "bgm24",
+        "bgm26",
+        "efm32pg23",
+        "efm32pg26",
+        "efm32pg28",
+        "efr32bg21",
+        "efr32bg22",
+        "efr32bg24",
+        "efr32bg26",
+        "efr32bg27",
+        "efr32bg29",
+        "efr32fg28",
+        "efr32mg21",
+        "efr32mg22",
+        "efr32mg24",
+        "efr32mg26",
+        "efr32mg27",
+        "efr32mg29",
+        "efr32zg23",
+        "efr32zg28",
+        "mgm24",
+        "mgm26"
+      ],
+      "socs": [
+        "bgm220pc22hna",
+        "bgm220pc22wga",
+        "bgm220sc22hna",
+        "bgm240pa22vna",
+        "bgm240pa32vna",
+        "bgm240pa32vnn",
+        "bgm240pb22vna",
+        "bgm240pb32vna",
+        "bgm240pb32vnn",
+        "bgm240sa22vna",
+        "bgm240sb22vna",
+        "bgm260pb22vna",
+        "bgm260pb32vna",
+        "efm32pg23b310f512im48",
+        "efm32pg26b101f512il136",
+        "efm32pg26b101f512im68",
+        "efm32pg26b301f1024il136",
+        "efm32pg26b301f1024im68",
+        "efm32pg26b301f2048il136",
+        "efm32pg26b301f2048im68",
+        "efm32pg26b500f3200il136",
+        "efm32pg26b500f3200im48",
+        "efm32pg26b500f3200im68",
+        "efm32pg26b501f3200il136",
+        "efm32pg26b501f3200im48",
+        "efm32pg26b501f3200im68",
+        "efm32pg28b200f512im68",
+        "efm32pg28b210f1024im68",
+        "efm32pg28b300f512im68",
+        "efm32pg28b310f1024im68",
+        "efr32bg21b010f1024im32",
+        "efr32bg22c222f352gm32",
+        "efr32bg22c222f352gm40",
+        "efr32bg22c222f352gn32",
+        "efr32bg22c224f512gm32",
+        "efr32bg22c224f512gm40",
+        "efr32bg22c224f512gn32",
+        "efr32bg22c224f512im32",
+        "efr32bg22c224f512im40",
+        "efr32bg24a010f1024im40",
+        "efr32bg24a010f1024im48",
+        "efr32bg24a020f1024im40",
+        "efr32bg24a020f1024im48",
+        "efr32bg24b110f1536im48",
+        "efr32bg24b210f1024im48",
+        "efr32bg24b220f1024im48",
+        "efr32bg24l010f768im40",
+        "efr32bg24l210f768im40",
+        "efr32bg26b311f1024il136",
+        "efr32bg26b311f1024im68",
+        "efr32bg26b311f2048il136",
+        "efr32bg26b311f2048im48",
+        "efr32bg26b311f2048im68",
+        "efr32bg26b321f1024im68",
+        "efr32bg26b321f2048im48",
+        "efr32bg26b321f2048im68",
+        "efr32bg26b410f3200im48",
+        "efr32bg26b411f3200im48",
+        "efr32bg26b420f3200im48",
+        "efr32bg26b421f3200im48",
+        "efr32bg26b510f3200il136",
+        "efr32bg26b510f3200im48",
+        "efr32bg26b510f3200im68",
+        "efr32bg26b511f3200il136",
+        "efr32bg26b511f3200im48",
+        "efr32bg26b511f3200im68",
+        "efr32bg27c140f768im32",
+        "efr32bg27c140f768im40",
+        "efr32bg27c230f768im32",
+        "efr32bg27c230f768im40",
+        "efr32bg27c320f768gj39",
+        "efr32bg27c320f768ij39",
+        "efr32bg29b140f1024im40",
+        "efr32bg29b220f1024cj45",
+        "efr32bg29b221f1024cj45",
+        "efr32bg29b230f1024cm40",
+        "efr32fg28a010f1024gm48",
+        "efr32fg28a010f1024gm68",
+        "efr32fg28a110f1024gm48",
+        "efr32fg28a110f1024gm68",
+        "efr32fg28a112f1024gm48",
+        "efr32fg28a112f1024gm68",
+        "efr32fg28a120f1024gm48",
+        "efr32fg28a120f1024gm68",
+        "efr32fg28a122f1024gm48",
+        "efr32fg28a122f1024gm68",
+        "efr32fg28b310f1024im48",
+        "efr32fg28b310f1024im68",
+        "efr32fg28b312f1024im48",
+        "efr32fg28b312f1024im68",
+        "efr32fg28b320f1024im48",
+        "efr32fg28b320f1024im68",
+        "efr32fg28b322f1024im48",
+        "efr32fg28b322f1024im68",
+        "efr32mg21a020f1024im32",
+        "efr32mg21b010f1024im32",
+        "efr32mg21b010f512im32",
+        "efr32mg21b010f768im32",
+        "efr32mg21b020f1024im32",
+        "efr32mg21b020f512im32",
+        "efr32mg21b020f768im32",
+        "efr32mg22c224f512gn32",
+        "efr32mg22c224f512im32",
+        "efr32mg22c224f512im40",
+        "efr32mg22e224f512im32",
+        "efr32mg22e224f512im40",
+        "efr32mg24b010f1024im48",
+        "efr32mg24b010f1536im40",
+        "efr32mg24b010f1536im48",
+        "efr32mg24b020f1024im48",
+        "efr32mg24b020f1536im40",
+        "efr32mg24b020f1536im48",
+        "efr32mg24b110f1536im48",
+        "efr32mg24b120f1536im48",
+        "efr32mg24b210f1536im48",
+        "efr32mg24b220f1536im48",
+        "efr32mg24b310f1536im48",
+        "efr32mg26b211f2048im68",
+        "efr32mg26b211f3200im48",
+        "efr32mg26b221f2048im68",
+        "efr32mg26b221f3200im48",
+        "efr32mg26b311f3200il136",
+        "efr32mg26b410f3200im48",
+        "efr32mg26b410f3200im68",
+        "efr32mg26b411f3200im48",
+        "efr32mg26b411f3200im68",
+        "efr32mg26b420f3200im48",
+        "efr32mg26b420f3200im68",
+        "efr32mg26b421f3200im48",
+        "efr32mg26b421f3200im68",
+        "efr32mg26b510f3200il136",
+        "efr32mg26b510f3200im48",
+        "efr32mg26b510f3200im68",
+        "efr32mg26b511f3200il136",
+        "efr32mg26b511f3200im48",
+        "efr32mg26b511f3200im68",
+        "efr32mg26b520f3200im48",
+        "efr32mg26b520f3200im68",
+        "efr32mg26b521f3200im48",
+        "efr32mg26b521f3200im68",
+        "efr32mg27c140f768im32",
+        "efr32mg27c140f768im40",
+        "efr32mg27c230f768im32",
+        "efr32mg27c230f768im40",
+        "efr32mg29b140f1024im40",
+        "efr32mg29b230f1024cm40",
+        "efr32zg23b020f512im48",
+        "efr32zg28a110f1024gm48",
+        "efr32zg28a110f1024gm68",
+        "efr32zg28a112f1024gm48",
+        "efr32zg28a112f1024gm68",
+        "efr32zg28a120f1024gm48",
+        "efr32zg28a120f1024gm68",
+        "efr32zg28a122f1024gm48",
+        "efr32zg28a122f1024gm68",
+        "efr32zg28b310f1024im48",
+        "efr32zg28b310f1024im68",
+        "efr32zg28b312f1024im48",
+        "efr32zg28b312f1024im68",
+        "efr32zg28b320f1024im48",
+        "efr32zg28b320f1024im68",
+        "efr32zg28b322f1024im48",
+        "efr32zg28b322f1024im68",
+        "mgm240pa22vna",
+        "mgm240pa32vna",
+        "mgm240pa32vnn",
+        "mgm240pb22vna",
+        "mgm240pb32vna",
+        "mgm240pb32vnn",
+        "mgm240sa22vna",
+        "mgm240sd22vna",
+        "mgm260pb22vna",
+        "mgm260pb32vna",
+        "mgm260pb32vnn",
+        "mgm260pd22vna",
+        "mgm260pd32vna",
+        "mgm260pd32vnn"
+      ],
+      "source_files": [
+        "soc/silabs/soc.yml"
+      ]
+    },
+    "silabs_s3": {
+      "series": [
+        "sibg301",
+        "simg301"
+      ],
+      "socs": [
+        "sibg301m104lgh",
+        "sibg301m104lgl",
+        "sibg301m104lih",
+        "sibg301m104lil",
+        "sibg301m104xil",
+        "sibg301m114kgh",
+        "sibg301m114kih",
+        "simg301m103lih",
+        "simg301m103wih",
+        "simg301m104lgh",
+        "simg301m104lgl",
+        "simg301m104lih",
+        "simg301m104lil",
+        "simg301m104xil",
+        "simg301m113wih",
+        "simg301m114kgh",
+        "simg301m114kih",
+        "simg301m114lgh",
+        "simg301m114lih"
+      ],
+      "source_files": [
+        "soc/silabs/soc.yml"
+      ]
+    },
+    "silabs_sim3": {
+      "series": [
+        "sim3u"
+      ],
+      "socs": [
+        "sim3u167"
+      ],
+      "source_files": [
+        "soc/silabs/soc.yml"
+      ]
+    },
+    "silabs_siwx91x": {
+      "series": [
+        "siwg917"
+      ],
+      "socs": [
+        "siwg917m111mgtba",
+        "siwg917y111mgaba"
+      ],
+      "source_files": [
+        "soc/silabs/soc.yml"
+      ]
+    },
+    "stm32": {
+      "series": [
+        "stm32c0x",
+        "stm32c5x",
+        "stm32f0x",
+        "stm32f1x",
+        "stm32f2x",
+        "stm32f3x",
+        "stm32f4x",
+        "stm32f7x",
+        "stm32g0x",
+        "stm32g4x",
+        "stm32h5x",
+        "stm32h7rsx",
+        "stm32h7x",
+        "stm32l0x",
+        "stm32l1x",
+        "stm32l4x",
+        "stm32l5x",
+        "stm32mp13x",
+        "stm32mp1x",
+        "stm32mp2x",
+        "stm32n6x",
+        "stm32u0x",
+        "stm32u3x",
+        "stm32u5x",
+        "stm32wb0x",
+        "stm32wbax",
+        "stm32wbx",
+        "stm32wl3x",
+        "stm32wlx"
+      ],
+      "socs": [
+        "stm32c011xx",
+        "stm32c031xx",
+        "stm32c051xx",
+        "stm32c071xx",
+        "stm32c091xx",
+        "stm32c092xx",
+        "stm32c531xx",
+        "stm32c532xx",
+        "stm32c542xx",
+        "stm32c551xx",
+        "stm32c552xx",
+        "stm32c562xx",
+        "stm32c591xx",
+        "stm32c593xx",
+        "stm32c5a3xx",
+        "stm32f030x4",
+        "stm32f030x6",
+        "stm32f030x8",
+        "stm32f030xc",
+        "stm32f031x6",
+        "stm32f042x6",
+        "stm32f051x8",
+        "stm32f070xb",
+        "stm32f072x8",
+        "stm32f072xb",
+        "stm32f091xc",
+        "stm32f098xx",
+        "stm32f100xb",
+        "stm32f100xe",
+        "stm32f103x8",
+        "stm32f103xb",
+        "stm32f103xe",
+        "stm32f105xb",
+        "stm32f105xc",
+        "stm32f107xc",
+        "stm32f205xx",
+        "stm32f207xx",
+        "stm32f302x8",
+        "stm32f302xc",
+        "stm32f303x8",
+        "stm32f303xb",
+        "stm32f303xc",
+        "stm32f303xe",
+        "stm32f334x8",
+        "stm32f373xc",
+        "stm32f401xc",
+        "stm32f401xd",
+        "stm32f401xe",
+        "stm32f405xx",
+        "stm32f407xx",
+        "stm32f410rx",
+        "stm32f411xe",
+        "stm32f412cx",
+        "stm32f412rx",
+        "stm32f412vx",
+        "stm32f412zx",
+        "stm32f413xx",
+        "stm32f415xx",
+        "stm32f417xx",
+        "stm32f423xx",
+        "stm32f427xx",
+        "stm32f429xx",
+        "stm32f437xx",
+        "stm32f439xx",
+        "stm32f446xx",
+        "stm32f469xx",
+        "stm32f479xx",
+        "stm32f722xx",
+        "stm32f723xx",
+        "stm32f730xx",
+        "stm32f745xx",
+        "stm32f746xx",
+        "stm32f750xx",
+        "stm32f756xx",
+        "stm32f765xx",
+        "stm32f767xx",
+        "stm32f769xx",
+        "stm32f777xx",
+        "stm32g030xx",
+        "stm32g031xx",
+        "stm32g041xx",
+        "stm32g050xx",
+        "stm32g051xx",
+        "stm32g061xx",
+        "stm32g070xx",
+        "stm32g071xx",
+        "stm32g081xx",
+        "stm32g0b0xx",
+        "stm32g0b1xx",
+        "stm32g0c1xx",
+        "stm32g431xx",
+        "stm32g441xx",
+        "stm32g473xx",
+        "stm32g474xx",
+        "stm32g483xx",
+        "stm32g484xx",
+        "stm32g491xx",
+        "stm32g4a1xx",
+        "stm32h503xx",
+        "stm32h523xx",
+        "stm32h533xx",
+        "stm32h562xx",
+        "stm32h563xx",
+        "stm32h573xx",
+        "stm32h5e4xx",
+        "stm32h5e5xx",
+        "stm32h5f4xx",
+        "stm32h5f5xx",
+        "stm32h723xx",
+        "stm32h725xx",
+        "stm32h730xx",
+        "stm32h730xxq",
+        "stm32h735xx",
+        "stm32h742xx",
+        "stm32h743xx",
+        "stm32h745xx",
+        "stm32h747xx",
+        "stm32h750xx",
+        "stm32h753xx",
+        "stm32h755xx",
+        "stm32h757xx",
+        "stm32h7a3xx",
+        "stm32h7a3xxq",
+        "stm32h7b0xx",
+        "stm32h7b0xxq",
+        "stm32h7b3xx",
+        "stm32h7b3xxq",
+        "stm32h7r3xx",
+        "stm32h7r7xx",
+        "stm32h7s3xx",
+        "stm32h7s7xx",
+        "stm32l010x4",
+        "stm32l010x6",
+        "stm32l010x8",
+        "stm32l010xb",
+        "stm32l011xx",
+        "stm32l031xx",
+        "stm32l051xx",
+        "stm32l053xx",
+        "stm32l071xx",
+        "stm32l072xx",
+        "stm32l073xx",
+        "stm32l081xx",
+        "stm32l083xx",
+        "stm32l100xb",
+        "stm32l151xb",
+        "stm32l151xba",
+        "stm32l151xc",
+        "stm32l151xe",
+        "stm32l152xc",
+        "stm32l152xe",
+        "stm32l412xx",
+        "stm32l422xx",
+        "stm32l431xx",
+        "stm32l432xx",
+        "stm32l433xx",
+        "stm32l451xx",
+        "stm32l452xx",
+        "stm32l462xx",
+        "stm32l471xx",
+        "stm32l475xx",
+        "stm32l476xx",
+        "stm32l486xx",
+        "stm32l496xx",
+        "stm32l4a6xx",
+        "stm32l4p5xx",
+        "stm32l4q5xx",
+        "stm32l4r5xx",
+        "stm32l4r9xx",
+        "stm32l4s5xx",
+        "stm32l552xx",
+        "stm32l562xx",
+        "stm32mp133fxx",
+        "stm32mp135fxx",
+        "stm32mp157cxx",
+        "stm32mp215fxx",
+        "stm32mp255cxx",
+        "stm32mp257fxx",
+        "stm32n657xx",
+        "stm32u031xx",
+        "stm32u073xx",
+        "stm32u083xx",
+        "stm32u375xx",
+        "stm32u385xx",
+        "stm32u3c5xx",
+        "stm32u535xx",
+        "stm32u545xx",
+        "stm32u575xx",
+        "stm32u585xx",
+        "stm32u595xx",
+        "stm32u599xx",
+        "stm32u5a5xx",
+        "stm32u5a9xx",
+        "stm32u5f7xx",
+        "stm32u5f9xx",
+        "stm32u5g7xx",
+        "stm32u5g9xx",
+        "stm32wb05",
+        "stm32wb06",
+        "stm32wb07",
+        "stm32wb09",
+        "stm32wb55xx",
+        "stm32wba23xx",
+        "stm32wba25xx",
+        "stm32wba52xx",
+        "stm32wba55xx",
+        "stm32wba65xx",
+        "stm32wl30xx",
+        "stm32wl31xx",
+        "stm32wl33xx",
+        "stm32wl54xx",
+        "stm32wl55xx",
+        "stm32wle4xx",
+        "stm32wle5xx"
+      ],
+      "source_files": [
+        "soc/st/stm32/soc.yml"
+      ]
+    },
+    "telink_tlsr": {
+      "series": [
+        "tlsr951x"
+      ],
+      "socs": [
+        "tlsr9518"
+      ],
+      "source_files": [
+        "soc/telink/tlsr/soc.yml"
+      ]
+    },
+    "ti_am13": {
+      "series": [
+        "am13e"
+      ],
+      "socs": [
+        "am13e23019"
+      ],
+      "source_files": [
+        "soc/ti/am13/soc.yml"
+      ]
+    },
+    "ti_k3": {
+      "series": [
+        "am62lx",
+        "am62x",
+        "am64x",
+        "j721e",
+        "j722s"
+      ],
+      "socs": [
+        "am2434",
+        "am6232",
+        "am6234",
+        "am6254",
+        "am62l3",
+        "am6442",
+        "j721e",
+        "j722s"
+      ],
+      "source_files": [
+        "soc/ti/k3/soc.yml"
+      ]
+    },
+    "ti_mspm": {
+      "series": [
+        "mspm0g",
+        "mspm0l",
+        "mspm33c"
+      ],
+      "socs": [
+        "mspm0g1105",
+        "mspm0g1106",
+        "mspm0g1107",
+        "mspm0g1505",
+        "mspm0g1506",
+        "mspm0g1507",
+        "mspm0g1518",
+        "mspm0g1519",
+        "mspm0g3105",
+        "mspm0g3106",
+        "mspm0g3107",
+        "mspm0g3505",
+        "mspm0g3506",
+        "mspm0g3507",
+        "mspm0g3518",
+        "mspm0g3519",
+        "mspm0l1105",
+        "mspm0l1106",
+        "mspm0l1117",
+        "mspm0l1227",
+        "mspm0l1228",
+        "mspm0l1303",
+        "mspm0l1304",
+        "mspm0l1305",
+        "mspm0l1306",
+        "mspm0l1343",
+        "mspm0l1344",
+        "mspm0l1345",
+        "mspm0l1346",
+        "mspm0l2227",
+        "mspm0l2228",
+        "mspm33c321a"
+      ],
+      "source_files": [
+        "soc/ti/mspm/soc.yml"
+      ]
+    },
+    "ti_simplelink": {
+      "series": [
+        "cc13x2_cc26x2",
+        "cc13x2x7_cc26x2x7",
+        "cc23x0",
+        "cc32xx",
+        "msp432p4xx"
+      ],
+      "socs": [
+        "cc1312r",
+        "cc1352p",
+        "cc1352p7",
+        "cc1352r",
+        "cc1352r7",
+        "cc2340r5",
+        "cc2652p",
+        "cc2652p7",
+        "cc2652r",
+        "cc2652r7",
+        "cc3220sf",
+        "cc3235sf",
+        "msp432p401r"
+      ],
+      "source_files": [
+        "soc/ti/simplelink/soc.yml"
+      ]
+    },
+    "ti_tiva_c": {
+      "series": [
+        "tm4c123x"
+      ],
+      "socs": [
+        "ti_tm4c123gh6pm"
+      ],
+      "source_files": [
+        "soc/ti/tiva_c/soc.yml"
+      ]
+    },
+    "xilinx_zynq7000": {
+      "series": [
+        "xc7zxxx",
+        "xc7zxxxs"
+      ],
+      "socs": [
+        "xc7z007s",
+        "xc7z010",
+        "xc7z012s",
+        "xc7z014s",
+        "xc7z015",
+        "xc7z020",
+        "xc7z030",
+        "xc7z035",
+        "xc7z045",
+        "xc7z100"
+      ],
+      "source_files": [
+        "soc/xlnx/zynq7000/soc.yml"
+      ]
+    },
+    "xilinx_zynqmp": {
+      "series": [],
+      "socs": [
+        "zynqmp_apu",
+        "zynqmp_rpu"
+      ],
+      "source_files": [
+        "soc/xlnx/zynqmp/soc.yml"
+      ]
+    }
+  }
 }

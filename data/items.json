@@ -1,5 +1,722 @@
 {
   "schema_version": 1,
-  "generated_at": null,
-  "items": []
+  "generated_at": "2026-09-21T02:14:53.389528Z",
+  "items": [
+    {
+      "id": "zephyr-soc-family:cdac:7abe2f8851c3bdcfef6d3731b7e8be16521f1c97",
+      "title": "New Zephyr SoC family: cdac",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/7abe2f8851c3bdcfef6d3731b7e8be16521f1c97",
+      "published": "2026-09-18T12:51:15Z",
+      "summary": "Zephyr added the cdac SoC family. Vendor: cdac. Series: none listed. SoCs: thejas32. Introducing commit: soc: cdac: add C-DAC THEJAS32 SoC support.",
+      "family": "cdac",
+      "vendor": "cdac",
+      "series": [],
+      "socs": [
+        "thejas32"
+      ],
+      "source_files": [
+        "soc/cdac/soc.yml"
+      ],
+      "commit": "7abe2f8851c3bdcfef6d3731b7e8be16521f1c97",
+      "commit_subject": "soc: cdac: add C-DAC THEJAS32 SoC support"
+    },
+    {
+      "id": "zephyr-soc-family:aurix:2074af30e242ea89484f20b6b58611b01df68bae",
+      "title": "New Zephyr SoC family: aurix",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/2074af30e242ea89484f20b6b58611b01df68bae",
+      "published": "2026-09-18T10:13:16Z",
+      "summary": "Zephyr added the aurix SoC family. Vendor: qemu. Series: tc3x, tc4x. SoCs: qemu_tc3x, qemu_tc4x. Introducing commit: soc: qemu: add QEMU AURIX tricore SoC support.",
+      "family": "aurix",
+      "vendor": "qemu",
+      "series": [
+        "tc3x",
+        "tc4x"
+      ],
+      "socs": [
+        "qemu_tc3x",
+        "qemu_tc4x"
+      ],
+      "source_files": [
+        "soc/qemu/tricore/soc.yml"
+      ],
+      "commit": "2074af30e242ea89484f20b6b58611b01df68bae",
+      "commit_subject": "soc: qemu: add QEMU AURIX tricore SoC support"
+    },
+    {
+      "id": "zephyr-soc-family:silabs_s3:7219a5b5aa6b24157115becee32a3343ac8c6c38",
+      "title": "New Zephyr SoC family: silabs_s3",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/7219a5b5aa6b24157115becee32a3343ac8c6c38",
+      "published": "2026-09-16T20:34:20Z",
+      "summary": "Zephyr added the silabs_s3 SoC family. Vendor: silabs. Series: sibg301, simg301. SoCs: sibg301m104lgh, sibg301m104lgl, sibg301m104lih, sibg301m104lil, sibg301m104xil, sibg301m114kgh, sibg301m114kih, simg301m103lih, simg301m103wih, simg301m104lgh, simg301m104lgl, simg301m104lih, and 7 more. Introducing commit: soc: silabs: Add Six301 SoC and silabs_s3 family.",
+      "family": "silabs_s3",
+      "vendor": "silabs",
+      "series": [
+        "sibg301",
+        "simg301"
+      ],
+      "socs": [
+        "sibg301m104lgh",
+        "sibg301m104lgl",
+        "sibg301m104lih",
+        "sibg301m104lil",
+        "sibg301m104xil",
+        "sibg301m114kgh",
+        "sibg301m114kih",
+        "simg301m103lih",
+        "simg301m103wih",
+        "simg301m104lgh",
+        "simg301m104lgl",
+        "simg301m104lih",
+        "simg301m104lil",
+        "simg301m104xil",
+        "simg301m113wih",
+        "simg301m114kgh",
+        "simg301m114kih",
+        "simg301m114lgh",
+        "simg301m114lih"
+      ],
+      "source_files": [
+        "soc/silabs/soc.yml"
+      ],
+      "commit": "7219a5b5aa6b24157115becee32a3343ac8c6c38",
+      "commit_subject": "soc: silabs: Add Six301 SoC and silabs_s3 family"
+    },
+    {
+      "id": "zephyr-soc-family:ti_tiva_c:594a038808cd65206e1526499fa719ae1a8597a8",
+      "title": "New Zephyr SoC family: ti_tiva_c",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/594a038808cd65206e1526499fa719ae1a8597a8",
+      "published": "2026-08-24T21:03:15Z",
+      "summary": "Zephyr added the ti_tiva_c SoC family. Vendor: ti. Series: tm4c123x. SoCs: ti_tm4c123gh6pm. Introducing commit: soc: ti: Add support for TI Tiva C Series Soc.",
+      "family": "ti_tiva_c",
+      "vendor": "ti",
+      "series": [
+        "tm4c123x"
+      ],
+      "socs": [
+        "ti_tm4c123gh6pm"
+      ],
+      "source_files": [
+        "soc/ti/tiva_c/soc.yml"
+      ],
+      "commit": "594a038808cd65206e1526499fa719ae1a8597a8",
+      "commit_subject": "soc: ti: Add support for TI Tiva C Series Soc"
+    },
+    {
+      "id": "zephyr-soc-family:microchip_sama5:0443254b69ec18d9d9e148be1a5823bca65c05b1",
+      "title": "New Zephyr SoC family: microchip_sama5",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/0443254b69ec18d9d9e148be1a5823bca65c05b1",
+      "published": "2026-08-18T21:20:08Z",
+      "summary": "Zephyr added the microchip_sama5 SoC family. Vendor: microchip. Series: sama5d2. SoCs: sama5d21, sama5d22, sama5d225cd1m, sama5d23, sama5d24, sama5d26, sama5d27, sama5d27cd1g, sama5d27cd5m, sama5d27cld1g, sama5d27cld2g, sama5d27som1, and 7 more. Introducing commit: soc: microchip: sam: add new SoC sam5d2.",
+      "family": "microchip_sama5",
+      "vendor": "microchip",
+      "series": [
+        "sama5d2"
+      ],
+      "socs": [
+        "sama5d21",
+        "sama5d22",
+        "sama5d225cd1m",
+        "sama5d23",
+        "sama5d24",
+        "sama5d26",
+        "sama5d27",
+        "sama5d27cd1g",
+        "sama5d27cd5m",
+        "sama5d27cld1g",
+        "sama5d27cld2g",
+        "sama5d27som1",
+        "sama5d27wlsom1",
+        "sama5d28",
+        "sama5d28cd1g",
+        "sama5d28cld1g",
+        "sama5d28cld2g",
+        "sama5d29",
+        "sama5d29ta100"
+      ],
+      "source_files": [
+        "soc/microchip/sam/sama5/soc.yml"
+      ],
+      "commit": "0443254b69ec18d9d9e148be1a5823bca65c05b1",
+      "commit_subject": "soc: microchip: sam: add new SoC sam5d2"
+    },
+    {
+      "id": "zephyr-soc-family:ti_am13:14ddc78b1423432a82c4a926d86b298fe90751f8",
+      "title": "New Zephyr SoC family: ti_am13",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/14ddc78b1423432a82c4a926d86b298fe90751f8",
+      "published": "2026-07-22T09:59:14Z",
+      "summary": "Zephyr added the ti_am13 SoC family. Vendor: ti. Series: am13e. SoCs: am13e23019. Introducing commit: soc: ti: am13: initial support for TI AM13 Family.",
+      "family": "ti_am13",
+      "vendor": "ti",
+      "series": [
+        "am13e"
+      ],
+      "socs": [
+        "am13e23019"
+      ],
+      "source_files": [
+        "soc/ti/am13/soc.yml"
+      ],
+      "commit": "14ddc78b1423432a82c4a926d86b298fe90751f8",
+      "commit_subject": "soc: ti: am13: initial support for TI AM13 Family"
+    },
+    {
+      "id": "zephyr-soc-family:shakti:33950c5c1b0b47c37a5bb83f5bc972f3c455b151",
+      "title": "New Zephyr SoC family: shakti",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/33950c5c1b0b47c37a5bb83f5bc972f3c455b151",
+      "published": "2026-07-15T08:44:27Z",
+      "summary": "Zephyr added the shakti SoC family. Vendor: shakti. Series: none listed. SoCs: ganga. Introducing commit: soc: shakti: add Ganga SoC.",
+      "family": "shakti",
+      "vendor": "shakti",
+      "series": [],
+      "socs": [
+        "ganga"
+      ],
+      "source_files": [
+        "soc/shakti/soc.yml"
+      ],
+      "commit": "33950c5c1b0b47c37a5bb83f5bc972f3c455b151",
+      "commit_subject": "soc: shakti: add Ganga SoC"
+    },
+    {
+      "id": "zephyr-soc-family:microchip:b13525f01bff2f194ef945aed2e13a9d9de2a501",
+      "title": "New Zephyr SoC family: microchip",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/b13525f01bff2f194ef945aed2e13a9d9de2a501",
+      "published": "2026-07-06T13:46:11Z",
+      "summary": "Zephyr added the microchip SoC family. Vendor: microchip. Series: smartfusion2. SoCs: m2s010. Introducing commit: soc: microchip: add SmartFusion2 M2S010 SoC support.",
+      "family": "microchip",
+      "vendor": "microchip",
+      "series": [
+        "smartfusion2"
+      ],
+      "socs": [
+        "m2s010"
+      ],
+      "source_files": [
+        "soc/microchip/smartfusion2/soc.yml"
+      ],
+      "commit": "b13525f01bff2f194ef945aed2e13a9d9de2a501",
+      "commit_subject": "soc: microchip: add SmartFusion2 M2S010 SoC support"
+    },
+    {
+      "id": "zephyr-soc-family:microchip_pic32cm_sg_gc:e83b4953c22d3810dd319fbbf1aea62c36f4dba7",
+      "title": "New Zephyr SoC family: microchip_pic32cm_sg_gc",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/e83b4953c22d3810dd319fbbf1aea62c36f4dba7",
+      "published": "2026-05-13T08:39:29Z",
+      "summary": "Zephyr added the microchip_pic32cm_sg_gc SoC family. Vendor: microchip. Series: pic32ck_sg00, pic32cm_gc00. SoCs: pic32cm5112gc00048, pic32cm5112gc00064, pic32cm5112gc00100, pic32cm5112sg00048, pic32cm5112sg00064, pic32cm5112sg00100. Introducing commit: soc: microchip: Adds support for PIC32CM SG/GC SoC series.",
+      "family": "microchip_pic32cm_sg_gc",
+      "vendor": "microchip",
+      "series": [
+        "pic32ck_sg00",
+        "pic32cm_gc00"
+      ],
+      "socs": [
+        "pic32cm5112gc00048",
+        "pic32cm5112gc00064",
+        "pic32cm5112gc00100",
+        "pic32cm5112sg00048",
+        "pic32cm5112sg00064",
+        "pic32cm5112sg00100"
+      ],
+      "source_files": [
+        "soc/microchip/pic32c/pic32cm_sg_gc/soc.yml"
+      ],
+      "commit": "e83b4953c22d3810dd319fbbf1aea62c36f4dba7",
+      "commit_subject": "soc: microchip: Adds support for PIC32CM SG/GC SoC series"
+    },
+    {
+      "id": "zephyr-soc-family:microchip_pic32ck_sg_gc:bd970247d57e16fce569d44469f5ef2a52f01794",
+      "title": "New Zephyr SoC family: microchip_pic32ck_sg_gc",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/bd970247d57e16fce569d44469f5ef2a52f01794",
+      "published": "2026-05-13T08:34:49Z",
+      "summary": "Zephyr added the microchip_pic32ck_sg_gc SoC family. Vendor: microchip. Series: pic32ck_gc00, pic32ck_gc01. SoCs: pic32ck0512gc00064, pic32ck0512gc00100, pic32ck0512gc01064, pic32ck0512gc01100, pic32ck1012gc00048, pic32ck1012gc00064, pic32ck1012gc00100, pic32ck1012gc01048, pic32ck1012gc01064, pic32ck1012gc01100, pic32ck1025gc00064, pic32ck1025gc00100, and 8 more. Introducing commit: soc: microchip: Add support for PIC32CK GC SoC series.",
+      "family": "microchip_pic32ck_sg_gc",
+      "vendor": "microchip",
+      "series": [
+        "pic32ck_gc00",
+        "pic32ck_gc01"
+      ],
+      "socs": [
+        "pic32ck0512gc00064",
+        "pic32ck0512gc00100",
+        "pic32ck0512gc01064",
+        "pic32ck0512gc01100",
+        "pic32ck1012gc00048",
+        "pic32ck1012gc00064",
+        "pic32ck1012gc00100",
+        "pic32ck1012gc01048",
+        "pic32ck1012gc01064",
+        "pic32ck1012gc01100",
+        "pic32ck1025gc00064",
+        "pic32ck1025gc00100",
+        "pic32ck1025gc01064",
+        "pic32ck1025gc01100",
+        "pic32ck2051gc00064",
+        "pic32ck2051gc00100",
+        "pic32ck2051gc00144",
+        "pic32ck2051gc01064",
+        "pic32ck2051gc01100",
+        "pic32ck2051gc01144"
+      ],
+      "source_files": [
+        "soc/microchip/pic32c/pic32ck_sg_gc/soc.yml"
+      ],
+      "commit": "bd970247d57e16fce569d44469f5ef2a52f01794",
+      "commit_subject": "soc: microchip: Add support for PIC32CK GC SoC series"
+    },
+    {
+      "id": "zephyr-soc-family:balletto:c9c338ea0e85f3e7c6a54201e502d59810343d55",
+      "title": "New Zephyr SoC family: balletto",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/c9c338ea0e85f3e7c6a54201e502d59810343d55",
+      "published": "2026-05-06T11:02:41Z",
+      "summary": "Zephyr added the balletto SoC family. Vendor: alif. Series: b1. SoCs: ab1c1f4m51820ph0. Introducing commit: soc: alif: Introduce balletto family and B1 series.",
+      "family": "balletto",
+      "vendor": "alif",
+      "series": [
+        "b1"
+      ],
+      "socs": [
+        "ab1c1f4m51820ph0"
+      ],
+      "source_files": [
+        "soc/alif/balletto/soc.yml"
+      ],
+      "commit": "c9c338ea0e85f3e7c6a54201e502d59810343d55",
+      "commit_subject": "soc: alif: Introduce balletto family and B1 series"
+    },
+    {
+      "id": "zephyr-soc-family:cdns_swerv:9a1e76b1932a2ba3cc9a71f31d47366cbd45ae26",
+      "title": "New Zephyr SoC family: cdns_swerv",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/9a1e76b1932a2ba3cc9a71f31d47366cbd45ae26",
+      "published": "2026-03-23T12:56:34Z",
+      "summary": "Zephyr added the cdns_swerv SoC family. Vendor: cdns. Series: none listed. SoCs: s400. Introducing commit: soc: add support for Cadence SweRV S400.",
+      "family": "cdns_swerv",
+      "vendor": "cdns",
+      "series": [],
+      "socs": [
+        "s400"
+      ],
+      "source_files": [
+        "soc/cdns/swerv/soc.yml"
+      ],
+      "commit": "9a1e76b1932a2ba3cc9a71f31d47366cbd45ae26",
+      "commit_subject": "soc: add support for Cadence SweRV S400"
+    },
+    {
+      "id": "zephyr-soc-family:mcxl:f9884ed503a8e94e20f7ee92fe849bb69fd43d06",
+      "title": "New Zephyr SoC family: mcxl",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/f9884ed503a8e94e20f7ee92fe849bb69fd43d06",
+      "published": "2026-03-20T04:32:47Z",
+      "summary": "Zephyr added the mcxl SoC family. Vendor: nxp. Series: mcxl25x. SoCs: mcxl253, mcxl254, mcxl255. Introducing commit: soc: nxp mcxl25x: add initial support for NXP MCXL25x series.",
+      "family": "mcxl",
+      "vendor": "nxp",
+      "series": [
+        "mcxl25x"
+      ],
+      "socs": [
+        "mcxl253",
+        "mcxl254",
+        "mcxl255"
+      ],
+      "source_files": [
+        "soc/nxp/mcx/soc.yml"
+      ],
+      "commit": "f9884ed503a8e94e20f7ee92fe849bb69fd43d06",
+      "commit_subject": "soc: nxp mcxl25x: add initial support for NXP MCXL25x series"
+    },
+    {
+      "id": "zephyr-soc-family:realtek_bee:ba5b90f22eea97f8f4b31b0a1c030c5a40f66ff3",
+      "title": "New Zephyr SoC family: realtek_bee",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/ba5b90f22eea97f8f4b31b0a1c030c5a40f66ff3",
+      "published": "2026-02-17T15:22:38Z",
+      "summary": "Zephyr added the realtek_bee SoC family. Vendor: realtek. Series: rtl87x2g. SoCs: rtl8762gc, rtl8762gkh, rtl8762gku, rtl8762grh, rtl8762gru, rtl8762gth, rtl8762gtp, rtl8762gtu, rtl8772gwf, rtl8772gwp. Introducing commit: soc: realtek: add soc support for RTL87x2G series.",
+      "family": "realtek_bee",
+      "vendor": "realtek",
+      "series": [
+        "rtl87x2g"
+      ],
+      "socs": [
+        "rtl8762gc",
+        "rtl8762gkh",
+        "rtl8762gku",
+        "rtl8762grh",
+        "rtl8762gru",
+        "rtl8762gth",
+        "rtl8762gtp",
+        "rtl8762gtu",
+        "rtl8772gwf",
+        "rtl8772gwp"
+      ],
+      "source_files": [
+        "soc/realtek/bee/soc.yml"
+      ],
+      "commit": "ba5b90f22eea97f8f4b31b0a1c030c5a40f66ff3",
+      "commit_subject": "soc: realtek: add soc support for RTL87x2G series"
+    },
+    {
+      "id": "zephyr-soc-family:ensemble:cd174cc9108fec58bfca8b09fcc3bfa390cc0d77",
+      "title": "New Zephyr SoC family: ensemble",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/cd174cc9108fec58bfca8b09fcc3bfa390cc0d77",
+      "published": "2026-02-17T09:31:21Z",
+      "summary": "Zephyr added the ensemble SoC family. Vendor: alif. Series: e8. SoCs: ae822fa0e5597ls0. Introducing commit: soc: alif: introduce Ensemble family and E8 series.",
+      "family": "ensemble",
+      "vendor": "alif",
+      "series": [
+        "e8"
+      ],
+      "socs": [
+        "ae822fa0e5597ls0"
+      ],
+      "source_files": [
+        "soc/alif/ensemble/soc.yml"
+      ],
+      "commit": "cd174cc9108fec58bfca8b09fcc3bfa390cc0d77",
+      "commit_subject": "soc: alif: introduce Ensemble family and E8 series"
+    },
+    {
+      "id": "zephyr-soc-family:microchip_pic32cm_pl:203feabe86da7413d65615bde10d9c5b51dcd37a",
+      "title": "New Zephyr SoC family: microchip_pic32cm_pl",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/203feabe86da7413d65615bde10d9c5b51dcd37a",
+      "published": "2026-02-12T09:56:02Z",
+      "summary": "Zephyr added the microchip_pic32cm_pl SoC family. Vendor: microchip. Series: pic32cm_pl10. SoCs: pic32cm6408pl10028, pic32cm6408pl10032, pic32cm6408pl10048, pic32cm6408pl10064. Introducing commit: soc: microchip: Adds support for PIC32CM PL SoC series.",
+      "family": "microchip_pic32cm_pl",
+      "vendor": "microchip",
+      "series": [
+        "pic32cm_pl10"
+      ],
+      "socs": [
+        "pic32cm6408pl10028",
+        "pic32cm6408pl10032",
+        "pic32cm6408pl10048",
+        "pic32cm6408pl10064"
+      ],
+      "source_files": [
+        "soc/microchip/pic32c/pic32cm_pl/soc.yml"
+      ],
+      "commit": "203feabe86da7413d65615bde10d9c5b51dcd37a",
+      "commit_subject": "soc: microchip: Adds support for PIC32CM PL SoC series"
+    },
+    {
+      "id": "zephyr-soc-family:realtek_fingerprint:b734952881d82182d859832427d31878ef48cb46",
+      "title": "New Zephyr SoC family: realtek_fingerprint",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/b734952881d82182d859832427d31878ef48cb46",
+      "published": "2026-02-04T12:49:21Z",
+      "summary": "Zephyr added the realtek_fingerprint SoC family. Vendor: realtek. Series: none listed. SoCs: rts5817. Introducing commit: soc: add realtek RTS5817.",
+      "family": "realtek_fingerprint",
+      "vendor": "realtek",
+      "series": [],
+      "socs": [
+        "rts5817"
+      ],
+      "source_files": [
+        "soc/realtek/fingerprint/soc.yml"
+      ],
+      "commit": "b734952881d82182d859832427d31878ef48cb46",
+      "commit_subject": "soc: add realtek RTS5817"
+    },
+    {
+      "id": "zephyr-soc-family:microchip_pic64:8c82334f5b2c3ac4f3e60e83e6498f5b23e600a0",
+      "title": "New Zephyr SoC family: microchip_pic64",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/8c82334f5b2c3ac4f3e60e83e6498f5b23e600a0",
+      "published": "2026-01-19T11:11:40Z",
+      "summary": "Zephyr added the microchip_pic64 SoC family. Vendor: microchip. Series: pic64gx. SoCs: pic64gx1000. Introducing commit: soc: microchip: pic64: Add minimal support for PIC64GX.",
+      "family": "microchip_pic64",
+      "vendor": "microchip",
+      "series": [
+        "pic64gx"
+      ],
+      "socs": [
+        "pic64gx1000"
+      ],
+      "source_files": [
+        "soc/microchip/pic64/soc.yml"
+      ],
+      "commit": "8c82334f5b2c3ac4f3e60e83e6498f5b23e600a0",
+      "commit_subject": "soc: microchip: pic64: Add minimal support for PIC64GX"
+    },
+    {
+      "id": "zephyr-soc-family:realtek_ameba:e6d690a983c3066dc5674da875c854b6861164b6",
+      "title": "New Zephyr SoC family: realtek_ameba",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/e6d690a983c3066dc5674da875c854b6861164b6",
+      "published": "2025-12-15T17:06:38Z",
+      "summary": "Zephyr added the realtek_ameba SoC family. Vendor: realtek. Series: amebadplus. SoCs: rtl8721dx. Introducing commit: soc: add realtek amebadplus SOC integration.",
+      "family": "realtek_ameba",
+      "vendor": "realtek",
+      "series": [
+        "amebadplus"
+      ],
+      "socs": [
+        "rtl8721dx"
+      ],
+      "source_files": [
+        "soc/realtek/ameba/soc.yml"
+      ],
+      "commit": "e6d690a983c3066dc5674da875c854b6861164b6",
+      "commit_subject": "soc: add realtek amebadplus SOC integration"
+    },
+    {
+      "id": "zephyr-soc-family:psoc4:f54955f6d21168f9cd7610bf9daa64199c3fa00b",
+      "title": "New Zephyr SoC family: psoc4",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/f54955f6d21168f9cd7610bf9daa64199c3fa00b",
+      "published": "2025-12-10T15:46:35Z",
+      "summary": "Zephyr added the psoc4 SoC family. Vendor: infineon. Series: psoc4100tp. SoCs: cy8c4146axi_t403, cy8c4146axi_t413, cy8c4146axi_t453, cy8c4146azi_t403, cy8c4146azi_t405, cy8c4146azi_t413, cy8c4146azi_t415, cy8c4146azi_t453, cy8c4146azi_t455, cy8c4146azq_t413, cy8c4146azq_t453, cy8c4146lqi_t403, and 28 more. Introducing commit: soc: infineon: add PSoC4100TP SOC support.",
+      "family": "psoc4",
+      "vendor": "infineon",
+      "series": [
+        "psoc4100tp"
+      ],
+      "socs": [
+        "cy8c4146axi_t403",
+        "cy8c4146axi_t413",
+        "cy8c4146axi_t453",
+        "cy8c4146azi_t403",
+        "cy8c4146azi_t405",
+        "cy8c4146azi_t413",
+        "cy8c4146azi_t415",
+        "cy8c4146azi_t453",
+        "cy8c4146azi_t455",
+        "cy8c4146azq_t413",
+        "cy8c4146azq_t453",
+        "cy8c4146lqi_t403",
+        "cy8c4146lqi_t413",
+        "cy8c4146lqi_t453",
+        "cy8c4147axi_t403",
+        "cy8c4147axi_t413",
+        "cy8c4147axi_t453",
+        "cy8c4147axi_t463",
+        "cy8c4147axi_t473",
+        "cy8c4147axq_t493",
+        "cy8c4147azi_t403",
+        "cy8c4147azi_t405",
+        "cy8c4147azi_t413",
+        "cy8c4147azi_t415",
+        "cy8c4147azi_t453",
+        "cy8c4147azi_t455",
+        "cy8c4147azi_t463",
+        "cy8c4147azi_t465",
+        "cy8c4147azi_t473",
+        "cy8c4147azi_t475",
+        "cy8c4147azq_t415",
+        "cy8c4147azq_t455",
+        "cy8c4147azq_t493",
+        "cy8c4147azq_t495",
+        "cy8c4147lqi_t403",
+        "cy8c4147lqi_t413",
+        "cy8c4147lqi_t453",
+        "cy8c4147lqi_t463",
+        "cy8c4147lqi_t473",
+        "cy8c4147lqq_t493"
+      ],
+      "source_files": [
+        "soc/infineon/psoc4/soc.yml"
+      ],
+      "commit": "f54955f6d21168f9cd7610bf9daa64199c3fa00b",
+      "commit_subject": "soc: infineon: add PSoC4100TP SOC support"
+    },
+    {
+      "id": "zephyr-soc-family:mcxe:057eb6d28129d7a8592412eb0a328b85e4fc11ef",
+      "title": "New Zephyr SoC family: mcxe",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/057eb6d28129d7a8592412eb0a328b85e4fc11ef",
+      "published": "2025-10-21T19:55:08Z",
+      "summary": "Zephyr added the mcxe SoC family. Vendor: nxp. Series: mcxe24x. SoCs: mcxe245, mcxe246, mcxe247. Introducing commit: soc: nxp: mcx: add mcxe24x series soc.",
+      "family": "mcxe",
+      "vendor": "nxp",
+      "series": [
+        "mcxe24x"
+      ],
+      "socs": [
+        "mcxe245",
+        "mcxe246",
+        "mcxe247"
+      ],
+      "source_files": [
+        "soc/nxp/mcx/soc.yml"
+      ],
+      "commit": "057eb6d28129d7a8592412eb0a328b85e4fc11ef",
+      "commit_subject": "soc: nxp: mcx: add mcxe24x series soc"
+    },
+    {
+      "id": "zephyr-soc-family:microchip_pic32cz_ca:83092a114ac05063cd31da064ef891892c8f131a",
+      "title": "New Zephyr SoC family: microchip_pic32cz_ca",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/83092a114ac05063cd31da064ef891892c8f131a",
+      "published": "2025-10-21T16:24:04Z",
+      "summary": "Zephyr added the microchip_pic32cz_ca SoC family. Vendor: microchip. Series: pic32cz_ca80, pic32cz_ca90, pic32cz_ca91. SoCs: pic32cz2051ca80100, pic32cz2051ca80144, pic32cz2051ca80176, pic32cz2051ca80208, pic32cz2051ca90100, pic32cz2051ca90144, pic32cz2051ca90176, pic32cz2051ca90208, pic32cz2051ca91100, pic32cz2051ca91144, pic32cz2051ca91176, pic32cz4010ca80100, and 19 more. Introducing commit: soc: microchip: add support for PIC32CZ CA SoC series.",
+      "family": "microchip_pic32cz_ca",
+      "vendor": "microchip",
+      "series": [
+        "pic32cz_ca80",
+        "pic32cz_ca90",
+        "pic32cz_ca91"
+      ],
+      "socs": [
+        "pic32cz2051ca80100",
+        "pic32cz2051ca80144",
+        "pic32cz2051ca80176",
+        "pic32cz2051ca80208",
+        "pic32cz2051ca90100",
+        "pic32cz2051ca90144",
+        "pic32cz2051ca90176",
+        "pic32cz2051ca90208",
+        "pic32cz2051ca91100",
+        "pic32cz2051ca91144",
+        "pic32cz2051ca91176",
+        "pic32cz4010ca80100",
+        "pic32cz4010ca80144",
+        "pic32cz4010ca80176",
+        "pic32cz4010ca80208",
+        "pic32cz4010ca90100",
+        "pic32cz4010ca90144",
+        "pic32cz4010ca90176",
+        "pic32cz4010ca90208",
+        "pic32cz4010ca91100",
+        "pic32cz4010ca91144",
+        "pic32cz4010ca91176",
+        "pic32cz4010ca91208",
+        "pic32cz8110ca80100",
+        "pic32cz8110ca80144",
+        "pic32cz8110ca80176",
+        "pic32cz8110ca80208",
+        "pic32cz8110ca90100",
+        "pic32cz8110ca90144",
+        "pic32cz8110ca90176",
+        "pic32cz8110ca90208"
+      ],
+      "source_files": [
+        "soc/microchip/pic32c/pic32cz_ca/soc.yml"
+      ],
+      "commit": "83092a114ac05063cd31da064ef891892c8f131a",
+      "commit_subject": "soc: microchip: add support for PIC32CZ CA SoC series"
+    },
+    {
+      "id": "zephyr-soc-family:microchip_sama7:7b08b91f62f30e882401252196fa11d97d90fe68",
+      "title": "New Zephyr SoC family: microchip_sama7",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/7b08b91f62f30e882401252196fa11d97d90fe68",
+      "published": "2025-10-21T14:26:09Z",
+      "summary": "Zephyr added the microchip_sama7 SoC family. Vendor: microchip. Series: sama7d6. SoCs: sama7d65, sama7d65d1g, sama7d65d1gn2, sama7d65d2g, sama7d65d2gn8, sama7d65d5m. Introducing commit: soc: microchip: sam: add new SoC sama7d65.",
+      "family": "microchip_sama7",
+      "vendor": "microchip",
+      "series": [
+        "sama7d6"
+      ],
+      "socs": [
+        "sama7d65",
+        "sama7d65d1g",
+        "sama7d65d1gn2",
+        "sama7d65d2g",
+        "sama7d65d2gn8",
+        "sama7d65d5m"
+      ],
+      "source_files": [
+        "soc/microchip/sam/sama7/soc.yml"
+      ],
+      "commit": "7b08b91f62f30e882401252196fa11d97d90fe68",
+      "commit_subject": "soc: microchip: sam: add new SoC sama7d65"
+    },
+    {
+      "id": "zephyr-soc-family:microchip_pic32cx_sg:abc755f59602be93da4c5d34a9acbb9d8816a8ea",
+      "title": "New Zephyr SoC family: microchip_pic32cx_sg",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/abc755f59602be93da4c5d34a9acbb9d8816a8ea",
+      "published": "2025-10-20T23:18:18Z",
+      "summary": "Zephyr added the microchip_pic32cx_sg SoC family. Vendor: microchip. Series: pic32cx_sg41, pic32cx_sg60, pic32cx_sg61. SoCs: pic32cx1025sg41064, pic32cx1025sg41080, pic32cx1025sg41100, pic32cx1025sg41128, pic32cx1025sg60100, pic32cx1025sg60128, pic32cx1025sg61100, pic32cx1025sg61128. Introducing commit: soc: microchip: Add support for PIC32CX SG SoC series.",
+      "family": "microchip_pic32cx_sg",
+      "vendor": "microchip",
+      "series": [
+        "pic32cx_sg41",
+        "pic32cx_sg60",
+        "pic32cx_sg61"
+      ],
+      "socs": [
+        "pic32cx1025sg41064",
+        "pic32cx1025sg41080",
+        "pic32cx1025sg41100",
+        "pic32cx1025sg41128",
+        "pic32cx1025sg60100",
+        "pic32cx1025sg60128",
+        "pic32cx1025sg61100",
+        "pic32cx1025sg61128"
+      ],
+      "source_files": [
+        "soc/microchip/pic32c/pic32cx_sg/soc.yml"
+      ],
+      "commit": "abc755f59602be93da4c5d34a9acbb9d8816a8ea",
+      "commit_subject": "soc: microchip: Add support for PIC32CX SG SoC series"
+    },
+    {
+      "id": "zephyr-soc-family:edge:03a6bb2282f70179282bef84d75949e02e2c86dc",
+      "title": "New Zephyr SoC family: edge",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/03a6bb2282f70179282bef84d75949e02e2c86dc",
+      "published": "2025-10-10T16:59:33Z",
+      "summary": "Zephyr added the edge SoC family. Vendor: infineon. Series: pse84. SoCs: pse812gms2dfnc4b, pse812gms4dfnc4b, pse812gos2dfnc4b, pse812gos4dfnc4b, pse813gms2dbzc4b, pse813gms2dbzq3b, pse813gms4dbzc4b, pse813gms4dbzq3b, pse813gos2dbzc4b, pse813gos2dbzq3b, pse813gos4dbzc4a, pse813gos4dbzc4b, and 47 more. Introducing commit: soc: add support for ifx edge socs.",
+      "family": "edge",
+      "vendor": "infineon",
+      "series": [
+        "pse84"
+      ],
+      "socs": [
+        "pse812gms2dfnc4b",
+        "pse812gms4dfnc4b",
+        "pse812gos2dfnc4b",
+        "pse812gos4dfnc4b",
+        "pse813gms2dbzc4b",
+        "pse813gms2dbzq3b",
+        "pse813gms4dbzc4b",
+        "pse813gms4dbzq3b",
+        "pse813gos2dbzc4b",
+        "pse813gos2dbzq3b",
+        "pse813gos4dbzc4a",
+        "pse813gos4dbzc4b",
+        "pse813gos4dbzq3b",
+        "pse822gms2dfnc4b",
+        "pse822gms4dfnc4b",
+        "pse822gos2dfnc4b",
+        "pse822gos4dfnc4b",
+        "pse823gms2dbzc4b",
+        "pse823gms2dbzq3b",
+        "pse823gms4dbzc4b",
+        "pse823gms4dbzq3b",
+        "pse823gos2dbzc4b",
+        "pse823gos2dbzq3b",
+        "pse823gos4dbzc4b",
+        "pse823gos4dbzq3b",
+        "pse832gms2dfnc4b",
+        "pse832gms4dfnc4b",
+        "pse832gos2dfnc4b",
+        "pse832gos4dfnc4b",
+        "pse833gms2dbzc4b",
+        "pse833gms2dbzq3b",
+        "pse833gms4dbzc4b",
+        "pse833gms4dbzq3b",
+        "pse833gos2dbzc4a",
+        "pse833gos2dbzc4b",
+        "pse833gos2dbzq3b",
+        "pse833gos4dbzc4b",
+        "pse833gos4dbzq3b",
+        "pse845gos2dfmc4b",
+        "pse845gos2dfnc4b",
+        "pse845gos4dfmc4b",
+        "pse845gos4dfnc4b",
+        "pse845gps2dfmc4a",
+        "pse845gps2dfmc4b",
+        "pse845gps2dfnc4a",
+        "pse845gps2dfnc4b",
+        "pse845gps4dfmc4b",
+        "pse845gps4dfnc4b",
+        "pse846gos2dbzc4b",
+        "pse846gos2dbzq3b",
+        "pse846gos4dbzc4b",
+        "pse846gos4dbzq3b",
+        "pse846gps2dbzc4a",
+        "pse846gps2dbzc4b",
+        "pse846gps2dbzq3a",
+        "pse846gps2dbzq3b",
+        "pse846gps4dbzc4a",
+        "pse846gps4dbzc4b",
+        "pse846gps4dbzq3b"
+      ],
+      "source_files": [
+        "soc/infineon/edge/soc.yml"
+      ],
+      "commit": "03a6bb2282f70179282bef84d75949e02e2c86dc",
+      "commit_subject": "soc: add support for ifx edge socs"
+    }
+  ]
 }
