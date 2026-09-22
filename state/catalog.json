@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "17110cae3f69194c4c7d907316961f35cca3b204",
+  "revision": "bf674f62501da1930a1d3980b8647b288b93a9f4",
   "families": {
     "ambiq": {
       "series": [
@@ -1078,10 +1078,19 @@
         "mcxa153",
         "mcxa156",
         "mcxa266",
+        "mcxa286",
+        "mcxa287",
         "mcxa344",
         "mcxa346",
         "mcxa366",
+        "mcxa456",
+        "mcxa457",
+        "mcxa536",
         "mcxa537",
+        "mcxa556",
+        "mcxa557",
+        "mcxa566",
+        "mcxa567",
         "mcxa577"
       ],
       "source_files": [
