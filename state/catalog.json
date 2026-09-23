@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "bf674f62501da1930a1d3980b8647b288b93a9f4",
+  "revision": "91f94e0982288f47a50382e51817b9214a148170",
   "families": {
     "ambiq": {
       "series": [
@@ -824,6 +824,7 @@
     "gd_gd32": {
       "series": [
         "gd32a50x",
+        "gd32c2x1",
         "gd32e10x",
         "gd32e50x",
         "gd32f3x0",
@@ -834,6 +835,7 @@
       ],
       "socs": [
         "gd32a503",
+        "gd32c231",
         "gd32e103",
         "gd32e507",
         "gd32f350",
@@ -2725,6 +2727,7 @@
         "stm32l552xx",
         "stm32l562xx",
         "stm32mp133fxx",
+        "stm32mp135dxx",
         "stm32mp135fxx",
         "stm32mp157cxx",
         "stm32mp215fxx",
