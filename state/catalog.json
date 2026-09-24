@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "cac9c27baa0b313ec1b759190efd490c17ffe25f",
+  "revision": "25ad2c16ca84eb4946d277cec4f943a155f0402a",
   "families": {
     "ambiq": {
       "series": [
@@ -2599,6 +2599,7 @@
         "stm32f303xe",
         "stm32f334x8",
         "stm32f373xc",
+        "stm32f401xb",
         "stm32f401xc",
         "stm32f401xd",
         "stm32f401xe",
