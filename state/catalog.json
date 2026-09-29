@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "407c9685ffe2e90cc0af7de1166cffdde27e1afd",
+  "revision": "bbd5d1dad2278e048104b41d7667c3d199e57b7d",
   "families": {
     "ambiq": {
       "series": [
@@ -2077,7 +2077,9 @@
         "rx14t",
         "rx261",
         "rx26t",
-        "rx62n"
+        "rx62n",
+        "rx74m",
+        "rx74n"
       ],
       "socs": [
         "r5f51308axfp",
@@ -2086,7 +2088,9 @@
         "r5f514t5amfm",
         "r5f52618bgfp",
         "r5f526tfddfp",
-        "r5f562n8"
+        "r5f562n8",
+        "r5k574mcb4ae",
+        "r5k574ncb4ae"
       ],
       "source_files": [
         "soc/renesas/rx/soc.yml"
