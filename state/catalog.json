@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "bbd5d1dad2278e048104b41d7667c3d199e57b7d",
+  "revision": "06591609e46d9c47fc907c7e3cd0cda8895f1cb0",
   "families": {
     "ambiq": {
       "series": [
@@ -1718,12 +1718,14 @@
         "mimxrt1024",
         "mimxrt1041",
         "mimxrt1042",
+        "mimxrt1051",
         "mimxrt1052",
         "mimxrt1062",
         "mimxrt1064",
         "mimxrt1151",
         "mimxrt1152",
         "mimxrt1166",
+        "mimxrt1175",
         "mimxrt1176",
         "mimxrt1181",
         "mimxrt1182",
@@ -2752,6 +2754,7 @@
         "stm32mp135dxx",
         "stm32mp135fxx",
         "stm32mp157cxx",
+        "stm32mp157fxx",
         "stm32mp215fxx",
         "stm32mp255cxx",
         "stm32mp257fxx",
