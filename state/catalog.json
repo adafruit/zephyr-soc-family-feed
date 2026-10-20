@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "06591609e46d9c47fc907c7e3cd0cda8895f1cb0",
+  "revision": "65a66b2087ec1c1a45ecae32149924e785917003",
   "families": {
     "ambiq": {
       "series": [
@@ -456,10 +456,20 @@
         "cy8c6144azi_s4f83",
         "cy8c6144azi_s4f92",
         "cy8c6144azi_s4f93",
+        "cy8c6144azq_s4f92",
+        "cy8c6144azq_s4f93",
+        "cy8c6144fmi_s4f03",
+        "cy8c6144fmi_s4f53",
+        "cy8c6144fmi_s4f73",
+        "cy8c6144fmi_s4f93",
+        "cy8c6144fmq_s4f93",
         "cy8c6144lqi_s4f12",
         "cy8c6144lqi_s4f62",
         "cy8c6144lqi_s4f82",
         "cy8c6144lqi_s4f92",
+        "cy8c6144lqq_s4f92",
+        "cy8c6146bti_f54",
+        "cy8c6147bti_f54",
         "cy8c6148azi_s2f44",
         "cy8c6148bzi_s2f44",
         "cy8c6148fni_s2f43",
@@ -480,13 +490,23 @@
         "cy8c6244azi_s4d83",
         "cy8c6244azi_s4d92",
         "cy8c6244azi_s4d93",
+        "cy8c6244azq_s4d92",
+        "cy8c6244azq_s4d93",
+        "cy8c6244fmi_s4d03",
+        "cy8c6244fmi_s4d53",
+        "cy8c6244fmi_s4d73",
+        "cy8c6244fmi_s4d93",
+        "cy8c6244fmq_s4d93",
         "cy8c6244lqi_s4d12",
         "cy8c6244lqi_s4d62",
         "cy8c6244lqi_s4d82",
         "cy8c6244lqi_s4d92",
+        "cy8c6244lqq_s4d92",
+        "cy8c6246bti_d54",
         "cy8c6246bzi_d04",
         "cy8c6247",
         "cy8c6247bfi_d54",
+        "cy8c6247bti_d54",
         "cy8c6247bzi_aud54",
         "cy8c6247bzi_d34",
         "cy8c6247bzi_d44",
@@ -548,7 +568,8 @@
         "cyb06447bzi_d54",
         "cyb0644abzi_s2d44",
         "cyble_416045_02",
-        "cys0644abzi_s2d44"
+        "cys0644abzi_s2d44",
+        "cys0644afni_s2d43"
       ],
       "source_files": [
         "soc/infineon/cat1a/soc.yml"
