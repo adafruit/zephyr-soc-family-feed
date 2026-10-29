@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "65a66b2087ec1c1a45ecae32149924e785917003",
+  "revision": "da75c74164ecaca8bfa26f1178afe9bda79080d0",
   "families": {
     "ambiq": {
       "series": [
