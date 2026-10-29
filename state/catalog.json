@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "da75c74164ecaca8bfa26f1178afe9bda79080d0",
+  "revision": "0b07590b00ea4e0bd7a5bc5045e82c39a8f1823e",
   "families": {
     "ambiq": {
       "series": [
@@ -1126,6 +1126,7 @@
         "mcxc141",
         "mcxc142",
         "mcxc242",
+        "mcxc243",
         "mcxc444"
       ],
       "source_files": [
@@ -2937,10 +2938,12 @@
     },
     "ti_tiva_c": {
       "series": [
-        "tm4c123x"
+        "tm4c123x",
+        "tm4c129x"
       ],
       "socs": [
-        "ti_tm4c123gh6pm"
+        "ti_tm4c123gh6pm",
+        "ti_tm4c129encpdt"
       ],
       "source_files": [
         "soc/ti/tiva_c/soc.yml"
