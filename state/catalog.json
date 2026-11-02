@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "85a412903948c2d2b40f5ab183086321e3ef0f5c",
+  "revision": "7c7971fcffa438249146c6b555d1ee0ce5c4c18a",
   "families": {
     "ambiq": {
       "series": [
@@ -1163,7 +1163,8 @@
     "mcxe": {
       "series": [
         "mcxe24x",
-        "mcxe31x"
+        "mcxe31x",
+        "mcxe32x"
       ],
       "socs": [
         "mcxe245",
@@ -1172,7 +1173,8 @@
         "mcxe315",
         "mcxe316",
         "mcxe317",
-        "mcxe31b"
+        "mcxe31b",
+        "mcxe32b"
       ],
       "source_files": [
         "soc/nxp/mcx/soc.yml"
@@ -2646,6 +2648,7 @@
         "stm32f098xx",
         "stm32f100xb",
         "stm32f100xe",
+        "stm32f103x6",
         "stm32f103x8",
         "stm32f103xb",
         "stm32f103xe",
