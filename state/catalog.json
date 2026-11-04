@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "7c7971fcffa438249146c6b555d1ee0ce5c4c18a",
+  "revision": "1f4fb3de3a18e8045cd236d99198103954d8118e",
   "families": {
     "ambiq": {
       "series": [
@@ -1258,12 +1258,10 @@
     },
     "microchip_miv": {
       "series": [
-        "miv",
-        "polarfire"
+        "miv"
       ],
       "socs": [
-        "miv",
-        "polarfire"
+        "miv"
       ],
       "source_files": [
         "soc/microchip/miv/soc.yml"
@@ -1456,6 +1454,17 @@
       ],
       "source_files": [
         "soc/microchip/pic64/soc.yml"
+      ]
+    },
+    "microchip_polarfire": {
+      "series": [
+        "polarfire"
+      ],
+      "socs": [
+        "polarfire"
+      ],
+      "source_files": [
+        "soc/microchip/polarfire/soc.yml"
       ]
     },
     "microchip_sam_d5x_e5x": {
