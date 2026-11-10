@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "54bcc41ce7ae736eb5f9e50d6b6a333e93bc09e4",
+  "revision": "51f14edb9c63b83492830744fea45125fd71a6e3",
   "families": {
     "ambiq": {
       "series": [
@@ -1639,12 +1639,14 @@
     "npcx": {
       "series": [
         "npck3",
+        "npck6",
         "npcx4",
         "npcx7",
         "npcx9"
       ],
       "socs": [
         "npck3m8k",
+        "npck6m9k",
         "npcx4m3f",
         "npcx4m8f",
         "npcx7m6fb",
