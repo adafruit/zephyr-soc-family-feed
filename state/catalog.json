@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "51f14edb9c63b83492830744fea45125fd71a6e3",
+  "revision": "6ca73f546a9e3bac0962c4a5184f7f81f474c366",
   "families": {
     "ambiq": {
       "series": [
@@ -56,7 +56,25 @@
         "ae350"
       ],
       "socs": [
-        "ae350"
+        "ae350",
+        "ae350_a25",
+        "ae350_a27",
+        "ae350_a45",
+        "ae350_a46",
+        "ae350_ax25",
+        "ae350_ax27",
+        "ae350_ax45",
+        "ae350_ax46",
+        "ae350_ax65",
+        "ae350_d23",
+        "ae350_d25f",
+        "ae350_d45",
+        "ae350_n22",
+        "ae350_n225",
+        "ae350_n25f",
+        "ae350_n45",
+        "ae350_nx25f",
+        "ae350_nx45"
       ],
       "source_files": [
         "soc/andestech/soc.yml"
