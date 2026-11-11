@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "6ca73f546a9e3bac0962c4a5184f7f81f474c366",
+  "revision": "5cf629e999c293a0d22d09418fd910ff97e37f3e",
   "families": {
     "ambiq": {
       "series": [
@@ -131,10 +131,12 @@
     },
     "aspeed": {
       "series": [
-        "ast10x0"
+        "ast10x0",
+        "ast27xx"
       ],
       "socs": [
-        "ast1030"
+        "ast1030",
+        "ast2700"
       ],
       "source_files": [
         "soc/aspeed/soc.yml"
