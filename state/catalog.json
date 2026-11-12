@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "5cf629e999c293a0d22d09418fd910ff97e37f3e",
+  "revision": "54b1e23b9ce303480ccbcab4b80d6f2f8442dac1",
   "families": {
     "ambiq": {
       "series": [
@@ -1145,7 +1145,12 @@
         "mcxaxx7"
       ],
       "socs": [
+        "mcxa144",
+        "mcxa145",
+        "mcxa146",
         "mcxa153",
+        "mcxa154",
+        "mcxa155",
         "mcxa156",
         "mcxa266",
         "mcxa286",
