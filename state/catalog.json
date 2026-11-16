@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "e37df4eb1f64d401ccf93fe5a66e211dd332873d",
+  "revision": "33c77191834f4221b8a2defdd6d5b699280198d1",
   "families": {
     "ambiq": {
       "series": [
@@ -2923,6 +2923,7 @@
         "stm32l151xe",
         "stm32l152xc",
         "stm32l152xe",
+        "stm32l162xe",
         "stm32l412xx",
         "stm32l422xx",
         "stm32l431xx",
