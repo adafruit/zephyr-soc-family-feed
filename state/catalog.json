@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "33c77191834f4221b8a2defdd6d5b699280198d1",
+  "revision": "b5806bd0b7912ba2cbf9e973066c82314a02820d",
   "families": {
     "ambiq": {
       "series": [
@@ -849,7 +849,7 @@
         "soc/alif/ensemble/soc.yml"
       ]
     },
-    "espressif_esp32": {
+    "espressif": {
       "series": [
         "esp32",
         "esp32c2",
@@ -899,6 +899,7 @@
         "gd32f3x0",
         "gd32f403",
         "gd32f4xx",
+        "gd32f527",
         "gd32l23x",
         "gd32vf103"
       ],
@@ -913,6 +914,7 @@
         "gd32f407",
         "gd32f450",
         "gd32f470",
+        "gd32f527",
         "gd32l233",
         "gd32vf103"
       ],
@@ -2750,6 +2752,7 @@
         "stm32g0x",
         "stm32g4x",
         "stm32h5x",
+        "stm32h7px",
         "stm32h7rsx",
         "stm32h7x",
         "stm32l0x",
@@ -2899,6 +2902,8 @@
         "stm32h7b0xxq",
         "stm32h7b3xx",
         "stm32h7b3xxq",
+        "stm32h7p4xx",
+        "stm32h7p5xx",
         "stm32h7r3xx",
         "stm32h7r7xx",
         "stm32h7s3xx",
