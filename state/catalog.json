@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "b5806bd0b7912ba2cbf9e973066c82314a02820d",
+  "revision": "f13eda1fb867ee6519829bfa0a452340cf6d5593",
   "families": {
     "ambiq": {
       "series": [
@@ -2751,6 +2751,7 @@
         "stm32f7x",
         "stm32g0x",
         "stm32g4x",
+        "stm32g5x",
         "stm32h5x",
         "stm32h7px",
         "stm32h7rsx",
@@ -2873,6 +2874,11 @@
         "stm32g484xx",
         "stm32g491xx",
         "stm32g4a1xx",
+        "stm32g534xx",
+        "stm32g544xx",
+        "stm32g553xx",
+        "stm32g554xx",
+        "stm32g564xx",
         "stm32h503xx",
         "stm32h523xx",
         "stm32h533xx",
@@ -3032,6 +3038,7 @@
     },
     "ti_k3": {
       "series": [
+        "am62ax",
         "am62lx",
         "am62x",
         "am64x",
@@ -3043,6 +3050,7 @@
         "am6232",
         "am6234",
         "am6254",
+        "am62a7",
         "am62l3",
         "am6442",
         "j721e",
