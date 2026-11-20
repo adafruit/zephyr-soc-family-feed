@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "f13eda1fb867ee6519829bfa0a452340cf6d5593",
+  "revision": "c864e128c3b916a5cda53efa61cdf85dda1b2cf2",
   "families": {
     "ambiq": {
       "series": [
@@ -760,6 +760,17 @@
       ],
       "source_files": [
         "soc/wch/ch32v/soc.yml"
+      ]
+    },
+    "corstone1000": {
+      "series": [
+        "corstone1000"
+      ],
+      "socs": [
+        "corstone1000"
+      ],
+      "source_files": [
+        "soc/arm/soc.yml"
       ]
     },
     "edge": {
@@ -1754,6 +1765,7 @@
         "m48x"
       ],
       "socs": [
+        "m483",
         "m487"
       ],
       "source_files": [

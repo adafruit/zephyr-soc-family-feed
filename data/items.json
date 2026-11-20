@@ -1,7 +1,27 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-19T18:25:28.179466Z",
+  "generated_at": "2026-11-20T18:25:06.922319Z",
   "items": [
+    {
+      "id": "zephyr-soc-family:corstone1000:09f2bddf7f8f4d106f6d1eae6caff3d3efc85da9",
+      "title": "New Zephyr SoC family: corstone1000",
+      "link": "https://github.com/zephyrproject-rtos/zephyr/commit/09f2bddf7f8f4d106f6d1eae6caff3d3efc85da9",
+      "published": "2026-11-20T17:30:12Z",
+      "summary": "Zephyr added the corstone1000 SoC family. Vendor: arm. Series: corstone1000. SoCs: corstone1000. Introducing commit: soc: arm: add Corstone-1000 External System support.",
+      "family": "corstone1000",
+      "vendor": "arm",
+      "series": [
+        "corstone1000"
+      ],
+      "socs": [
+        "corstone1000"
+      ],
+      "source_files": [
+        "soc/arm/soc.yml"
+      ],
+      "commit": "09f2bddf7f8f4d106f6d1eae6caff3d3efc85da9",
+      "commit_subject": "soc: arm: add Corstone-1000 External System support"
+    },
     {
       "id": "zephyr-soc-family:cdac:7abe2f8851c3bdcfef6d3731b7e8be16521f1c97",
       "title": "New Zephyr SoC family: cdac",
