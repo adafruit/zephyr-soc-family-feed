@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "85c6a780f8907e116ec7e02923c5537a46923904",
+  "revision": "a2de066552887152142ee9b493e8135c5b3ec0fe",
   "families": {
     "ambiq": {
       "series": [
@@ -871,7 +871,8 @@
         "esp32h2",
         "esp32p4",
         "esp32s2",
-        "esp32s3"
+        "esp32s3",
+        "esp32s31"
       ],
       "socs": [
         "esp32",
@@ -883,7 +884,8 @@
         "esp32h2",
         "esp32p4",
         "esp32s2",
-        "esp32s3"
+        "esp32s3",
+        "esp32s31"
       ],
       "source_files": [
         "soc/espressif/soc.yml"
