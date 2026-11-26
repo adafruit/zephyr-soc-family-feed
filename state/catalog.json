@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "a2de066552887152142ee9b493e8135c5b3ec0fe",
+  "revision": "b4a49592f0880cdb0fdd1ca441e422390812944b",
   "families": {
     "ambiq": {
       "series": [
@@ -2882,6 +2882,7 @@
         "stm32g0c1xx",
         "stm32g431xx",
         "stm32g441xx",
+        "stm32g471xx",
         "stm32g473xx",
         "stm32g474xx",
         "stm32g483xx",
